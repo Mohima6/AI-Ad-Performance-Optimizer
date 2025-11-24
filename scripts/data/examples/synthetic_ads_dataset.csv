@@ -1,0 +1,101 @@
+Ad ID,Product,Audience,Region,Budget,Impressions,Clicks,Conversions,CTR,ROI,Ad Description
+AD001,Smartphone,Tech Enthusiasts,Asia,320.4,3228,363,61,0.112,9.52,Buy Smartphone now! Exclusive offer for Tech Enthusiasts in Asia.
+AD002,Sneakers,Tech Enthusiasts,Africa,178.24,1775,56,4,0.032,1.12,Buy Sneakers now! Exclusive offer for Tech Enthusiasts in Africa.
+AD003,Protein Powder,Tech Enthusiasts,North America,184.33,1922,24,5,0.012,1.36,Buy Protein Powder now! Exclusive offer for Tech Enthusiasts in North America.
+AD004,Sneakers,Foodies,Africa,123.88,1277,161,14,0.126,5.65,Buy Sneakers now! Exclusive offer for Foodies in Africa.
+AD005,Sneakers,Foodies,South America,298.4,2960,155,24,0.052,4.02,Buy Sneakers now! Exclusive offer for Foodies in South America.
+AD006,Chocolate Box,Gamers,North America,782.93,7806,550,59,0.07,3.77,Buy Chocolate Box now! Exclusive offer for Gamers in North America.
+AD007,Sneakers,Fitness Fans,Asia,350.08,3450,175,21,0.051,3.0,Buy Sneakers now! Exclusive offer for Fitness Fans in Asia.
+AD008,Sneakers,Gamers,North America,183.47,1850,136,28,0.074,7.63,Buy Sneakers now! Exclusive offer for Gamers in North America.
+AD009,Smartphone,Gamers,Asia,643.35,6436,598,35,0.093,2.72,Buy Smartphone now! Exclusive offer for Gamers in Asia.
+AD010,Smartphone,Fitness Fans,Africa,212.34,2052,195,16,0.095,3.77,Buy Smartphone now! Exclusive offer for Fitness Fans in Africa.
+AD011,Protein Powder,Tech Enthusiasts,Africa,363.86,3608,381,52,0.106,7.15,Buy Protein Powder now! Exclusive offer for Tech Enthusiasts in Africa.
+AD012,Chocolate Box,Gamers,Africa,273.06,2716,73,10,0.027,1.83,Buy Chocolate Box now! Exclusive offer for Gamers in Africa.
+AD013,Smartphone,Tech Enthusiasts,Europe,795.76,7998,429,66,0.054,4.15,Buy Smartphone now! Exclusive offer for Tech Enthusiasts in Europe.
+AD014,Smartphone,Fashion Lovers,North America,442.11,4360,377,32,0.086,3.62,Buy Smartphone now! Exclusive offer for Fashion Lovers in North America.
+AD015,Protein Powder,Gamers,Europe,433.16,4368,97,8,0.022,0.92,Buy Protein Powder now! Exclusive offer for Gamers in Europe.
+AD016,Sneakers,Gamers,North America,648.22,6490,105,12,0.016,0.93,Buy Sneakers now! Exclusive offer for Gamers in North America.
+AD017,Sneakers,Foodies,Europe,247.06,2396,301,36,0.126,7.29,Buy Sneakers now! Exclusive offer for Foodies in Europe.
+AD018,Protein Powder,Gamers,Africa,297.65,2940,145,22,0.049,3.7,Buy Protein Powder now! Exclusive offer for Gamers in Africa.
+AD019,Gaming Laptop,Tech Enthusiasts,Europe,839.62,8412,171,42,0.02,2.5,Buy Gaming Laptop now! Exclusive offer for Tech Enthusiasts in Europe.
+AD020,Gaming Laptop,Fitness Fans,Asia,159.57,1576,186,16,0.118,5.01,Buy Gaming Laptop now! Exclusive offer for Fitness Fans in Asia.
+AD021,Chocolate Box,Gamers,Europe,689.89,6950,819,53,0.118,3.84,Buy Chocolate Box now! Exclusive offer for Gamers in Europe.
+AD022,Protein Powder,Fitness Fans,Europe,338.39,3430,206,15,0.06,2.22,Buy Protein Powder now! Exclusive offer for Fitness Fans in Europe.
+AD023,Sneakers,Foodies,Africa,336.47,3381,190,11,0.056,1.63,Buy Sneakers now! Exclusive offer for Foodies in Africa.
+AD024,Chocolate Box,Fitness Fans,Africa,459.46,4643,248,28,0.053,3.05,Buy Chocolate Box now! Exclusive offer for Fitness Fans in Africa.
+AD025,Sneakers,Fashion Lovers,Africa,544.16,5482,735,106,0.134,9.74,Buy Sneakers now! Exclusive offer for Fashion Lovers in Africa.
+AD026,Smartphone,Tech Enthusiasts,Europe,664.7,6714,179,34,0.027,2.56,Buy Smartphone now! Exclusive offer for Tech Enthusiasts in Europe.
+AD027,Protein Powder,Foodies,North America,446.29,4480,528,78,0.118,8.74,Buy Protein Powder now! Exclusive offer for Foodies in North America.
+AD028,Chocolate Box,Fitness Fans,Africa,326.27,3339,277,37,0.083,5.67,Buy Chocolate Box now! Exclusive offer for Fitness Fans in Africa.
+AD029,Chocolate Box,Tech Enthusiasts,North America,713.54,7139,385,58,0.054,4.06,Buy Chocolate Box now! Exclusive offer for Tech Enthusiasts in North America.
+AD030,Chocolate Box,Gamers,Asia,200.4,1989,272,27,0.137,6.74,Buy Chocolate Box now! Exclusive offer for Gamers in Asia.
+AD031,Protein Powder,Fashion Lovers,South America,102.92,1103,46,3,0.042,1.46,Buy Protein Powder now! Exclusive offer for Fashion Lovers in South America.
+AD032,Gaming Laptop,Foodies,Europe,556.91,5543,280,23,0.051,2.06,Buy Gaming Laptop now! Exclusive offer for Foodies in Europe.
+AD033,Smartphone,Gamers,Africa,648.07,6526,799,69,0.122,5.32,Buy Smartphone now! Exclusive offer for Gamers in Africa.
+AD034,Sneakers,Gamers,Europe,585.44,5870,792,125,0.135,10.68,Buy Sneakers now! Exclusive offer for Gamers in Europe.
+AD035,Chocolate Box,Tech Enthusiasts,Africa,391.74,3882,162,21,0.042,2.68,Buy Chocolate Box now! Exclusive offer for Tech Enthusiasts in Africa.
+AD036,Smartphone,Tech Enthusiasts,Asia,890.85,8892,1107,245,0.124,13.75,Buy Smartphone now! Exclusive offer for Tech Enthusiasts in Asia.
+AD037,Gaming Laptop,Fashion Lovers,North America,316.78,3168,216,20,0.068,3.16,Buy Gaming Laptop now! Exclusive offer for Fashion Lovers in North America.
+AD038,Chocolate Box,Tech Enthusiasts,North America,758.72,7575,202,23,0.027,1.52,Buy Chocolate Box now! Exclusive offer for Tech Enthusiasts in North America.
+AD039,Smartphone,Foodies,Europe,215.55,2147,177,33,0.082,7.65,Buy Smartphone now! Exclusive offer for Foodies in Europe.
+AD040,Protein Powder,Foodies,Europe,338.55,3405,207,50,0.061,7.38,Buy Protein Powder now! Exclusive offer for Foodies in Europe.
+AD041,Chocolate Box,Fitness Fans,Europe,936.02,9264,462,26,0.05,1.39,Buy Chocolate Box now! Exclusive offer for Fitness Fans in Europe.
+AD042,Sneakers,Gamers,South America,995.63,9954,949,142,0.095,7.13,Buy Sneakers now! Exclusive offer for Gamers in South America.
+AD043,Gaming Laptop,Fitness Fans,Africa,506.34,5053,153,22,0.03,2.17,Buy Gaming Laptop now! Exclusive offer for Fitness Fans in Africa.
+AD044,Sneakers,Fashion Lovers,North America,404.28,4057,600,59,0.148,7.3,Buy Sneakers now! Exclusive offer for Fashion Lovers in North America.
+AD045,Chocolate Box,Foodies,Europe,629.6,6353,274,53,0.043,4.21,Buy Chocolate Box now! Exclusive offer for Foodies in Europe.
+AD046,Smartphone,Tech Enthusiasts,North America,306.05,3098,190,33,0.061,5.39,Buy Smartphone now! Exclusive offer for Tech Enthusiasts in North America.
+AD047,Smartphone,Gamers,North America,562.74,5656,128,27,0.023,2.4,Buy Smartphone now! Exclusive offer for Gamers in North America.
+AD048,Gaming Laptop,Fitness Fans,Europe,585.31,5962,327,28,0.055,2.39,Buy Gaming Laptop now! Exclusive offer for Fitness Fans in Europe.
+AD049,Chocolate Box,Foodies,South America,318.7,3191,334,17,0.105,2.67,Buy Chocolate Box now! Exclusive offer for Foodies in South America.
+AD050,Protein Powder,Fitness Fans,Europe,184.89,1823,148,14,0.081,3.79,Buy Protein Powder now! Exclusive offer for Fitness Fans in Europe.
+AD051,Protein Powder,Gamers,South America,469.99,4646,495,63,0.107,6.7,Buy Protein Powder now! Exclusive offer for Gamers in South America.
+AD052,Smartphone,Tech Enthusiasts,North America,462.36,4647,655,50,0.141,5.41,Buy Smartphone now! Exclusive offer for Tech Enthusiasts in North America.
+AD053,Gaming Laptop,Tech Enthusiasts,Europe,272.43,2685,374,84,0.139,15.42,Buy Gaming Laptop now! Exclusive offer for Tech Enthusiasts in Europe.
+AD054,Chocolate Box,Fitness Fans,Europe,479.69,4780,220,40,0.046,4.17,Buy Chocolate Box now! Exclusive offer for Fitness Fans in Europe.
+AD055,Gaming Laptop,Fitness Fans,Europe,887.04,8881,747,73,0.084,4.11,Buy Gaming Laptop now! Exclusive offer for Fitness Fans in Europe.
+AD056,Smartphone,Fitness Fans,Africa,188.12,1946,44,10,0.023,2.66,Buy Smartphone now! Exclusive offer for Fitness Fans in Africa.
+AD057,Chocolate Box,Tech Enthusiasts,North America,933.73,9350,537,64,0.057,3.43,Buy Chocolate Box now! Exclusive offer for Tech Enthusiasts in North America.
+AD058,Sneakers,Fashion Lovers,South America,537.08,5409,603,138,0.111,12.85,Buy Sneakers now! Exclusive offer for Fashion Lovers in South America.
+AD059,Sneakers,Fitness Fans,North America,248.17,2494,249,16,0.1,3.22,Buy Sneakers now! Exclusive offer for Fitness Fans in North America.
+AD060,Smartphone,Fitness Fans,Asia,933.87,9356,305,70,0.033,3.75,Buy Smartphone now! Exclusive offer for Fitness Fans in Asia.
+AD061,Protein Powder,Gamers,South America,726.93,7283,77,6,0.011,0.41,Buy Protein Powder now! Exclusive offer for Gamers in South America.
+AD062,Chocolate Box,Fitness Fans,Europe,270.91,2673,232,43,0.087,7.94,Buy Chocolate Box now! Exclusive offer for Fitness Fans in Europe.
+AD063,Sneakers,Tech Enthusiasts,Africa,762.16,7562,829,80,0.11,5.25,Buy Sneakers now! Exclusive offer for Tech Enthusiasts in Africa.
+AD064,Smartphone,Gamers,North America,145.13,1484,82,16,0.055,5.51,Buy Smartphone now! Exclusive offer for Gamers in North America.
+AD065,Protein Powder,Foodies,Africa,241.69,2465,251,41,0.102,8.48,Buy Protein Powder now! Exclusive offer for Foodies in Africa.
+AD066,Chocolate Box,Tech Enthusiasts,Europe,161.67,1637,37,4,0.023,1.24,Buy Chocolate Box now! Exclusive offer for Tech Enthusiasts in Europe.
+AD067,Smartphone,Fashion Lovers,South America,207.9,2034,297,38,0.146,9.14,Buy Smartphone now! Exclusive offer for Fashion Lovers in South America.
+AD068,Chocolate Box,Fashion Lovers,Africa,635.07,6309,850,149,0.135,11.73,Buy Chocolate Box now! Exclusive offer for Fashion Lovers in Africa.
+AD069,Chocolate Box,Tech Enthusiasts,South America,691.64,6917,627,93,0.091,6.72,Buy Chocolate Box now! Exclusive offer for Tech Enthusiasts in South America.
+AD070,Chocolate Box,Foodies,Asia,941.24,9485,354,68,0.037,3.61,Buy Chocolate Box now! Exclusive offer for Foodies in Asia.
+AD071,Sneakers,Gamers,Europe,339.05,3336,472,113,0.141,16.66,Buy Sneakers now! Exclusive offer for Gamers in Europe.
+AD072,Sneakers,Gamers,South America,384.56,3869,534,66,0.138,8.58,Buy Sneakers now! Exclusive offer for Gamers in South America.
+AD073,Smartphone,Tech Enthusiasts,South America,659.04,6614,958,211,0.145,16.01,Buy Smartphone now! Exclusive offer for Tech Enthusiasts in South America.
+AD074,Chocolate Box,Tech Enthusiasts,North America,583.87,5835,298,37,0.051,3.17,Buy Chocolate Box now! Exclusive offer for Tech Enthusiasts in North America.
+AD075,Chocolate Box,Gamers,Europe,939.93,9376,316,50,0.034,2.66,Buy Chocolate Box now! Exclusive offer for Gamers in Europe.
+AD076,Smartphone,Fashion Lovers,Asia,356.49,3607,508,96,0.141,13.46,Buy Smartphone now! Exclusive offer for Fashion Lovers in Asia.
+AD077,Protein Powder,Foodies,Asia,650.51,6460,620,153,0.096,11.76,Buy Protein Powder now! Exclusive offer for Foodies in Asia.
+AD078,Chocolate Box,Tech Enthusiasts,Africa,369.44,3702,109,16,0.029,2.17,Buy Chocolate Box now! Exclusive offer for Tech Enthusiasts in Africa.
+AD079,Smartphone,Fashion Lovers,Asia,203.89,2056,221,42,0.107,10.3,Buy Smartphone now! Exclusive offer for Fashion Lovers in Asia.
+AD080,Smartphone,Foodies,Europe,345.11,3479,209,22,0.06,3.19,Buy Smartphone now! Exclusive offer for Foodies in Europe.
+AD081,Chocolate Box,Fashion Lovers,Asia,283.24,2858,375,87,0.131,15.36,Buy Chocolate Box now! Exclusive offer for Fashion Lovers in Asia.
+AD082,Gaming Laptop,Foodies,South America,326.01,3285,268,40,0.082,6.13,Buy Gaming Laptop now! Exclusive offer for Foodies in South America.
+AD083,Smartphone,Tech Enthusiasts,South America,846.41,8492,919,192,0.108,11.34,Buy Smartphone now! Exclusive offer for Tech Enthusiasts in South America.
+AD084,Smartphone,Tech Enthusiasts,Asia,794.01,7996,1076,126,0.135,7.93,Buy Smartphone now! Exclusive offer for Tech Enthusiasts in Asia.
+AD085,Gaming Laptop,Fashion Lovers,South America,596.51,5926,539,30,0.091,2.51,Buy Gaming Laptop now! Exclusive offer for Fashion Lovers in South America.
+AD086,Protein Powder,Foodies,North America,200.69,1995,149,23,0.075,5.73,Buy Protein Powder now! Exclusive offer for Foodies in North America.
+AD087,Sneakers,Foodies,North America,851.14,8545,121,6,0.014,0.35,Buy Sneakers now! Exclusive offer for Foodies in North America.
+AD088,Chocolate Box,Foodies,Europe,486.81,4787,599,73,0.125,7.5,Buy Chocolate Box now! Exclusive offer for Foodies in Europe.
+AD089,Smartphone,Gamers,Asia,909.08,9094,1071,99,0.118,5.45,Buy Smartphone now! Exclusive offer for Gamers in Asia.
+AD090,Smartphone,Gamers,Europe,713.86,7084,688,46,0.097,3.22,Buy Smartphone now! Exclusive offer for Gamers in Europe.
+AD091,Smartphone,Gamers,Africa,895.72,8959,767,136,0.086,7.59,Buy Smartphone now! Exclusive offer for Gamers in Africa.
+AD092,Protein Powder,Foodies,Europe,933.19,9299,1038,254,0.112,13.61,Buy Protein Powder now! Exclusive offer for Foodies in Europe.
+AD093,Sneakers,Fashion Lovers,Europe,893.27,8831,1071,111,0.121,6.21,Buy Sneakers now! Exclusive offer for Fashion Lovers in Europe.
+AD094,Smartphone,Fashion Lovers,Asia,804.15,8050,575,37,0.071,2.3,Buy Smartphone now! Exclusive offer for Fashion Lovers in Asia.
+AD095,Protein Powder,Fashion Lovers,Asia,243.28,2458,165,13,0.067,2.67,Buy Protein Powder now! Exclusive offer for Fashion Lovers in Asia.
+AD096,Smartphone,Fitness Fans,North America,872.73,8770,279,27,0.032,1.55,Buy Smartphone now! Exclusive offer for Fitness Fans in North America.
+AD097,Sneakers,Fashion Lovers,South America,414.69,4235,433,45,0.102,5.43,Buy Sneakers now! Exclusive offer for Fashion Lovers in South America.
+AD098,Sneakers,Fashion Lovers,North America,694.03,6960,1000,197,0.144,14.19,Buy Sneakers now! Exclusive offer for Fashion Lovers in North America.
+AD099,Protein Powder,Gamers,Asia,877.92,8885,610,60,0.069,3.42,Buy Protein Powder now! Exclusive offer for Gamers in Asia.
+AD100,Gaming Laptop,Gamers,Africa,459.71,4648,278,56,0.06,6.09,Buy Gaming Laptop now! Exclusive offer for Gamers in Africa.

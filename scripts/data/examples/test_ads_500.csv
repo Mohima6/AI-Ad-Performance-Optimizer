@@ -1,0 +1,501 @@
+AdID,Product,Audience,Region,Cost,Impressions,Clicks,Conversions,CTR,CVR,AdText
+AD001,Camera,Tech Enthusiasts,North America,499.07,3597,161,46,0.045,0.286,Buy Camera now! Exclusive offer for Tech Enthusiasts in North America.
+AD002,Smartwatch,Gamers,Africa,207.82,5116,245,18,0.048,0.073,Buy Smartwatch now! Exclusive offer for Gamers in Africa.
+AD003,Backpack,Tech Enthusiasts,Asia,395.23,509,59,2,0.116,0.034,Buy Backpack now! Exclusive offer for Tech Enthusiasts in Asia.
+AD004,Laptop,Tech Enthusiasts,North America,230.87,6252,456,118,0.073,0.259,Buy Laptop now! Exclusive offer for Tech Enthusiasts in North America.
+AD005,Camera,Gamers,Europe,265.94,6795,806,115,0.119,0.143,Buy Camera now! Exclusive offer for Gamers in Europe.
+AD006,T-Shirt,Professionals,Africa,332.38,5315,101,25,0.019,0.248,Buy T-Shirt now! Exclusive offer for Professionals in Africa.
+AD007,Protein Powder,Artists,Asia,443.15,1572,123,33,0.078,0.268,Buy Protein Powder now! Exclusive offer for Artists in Asia.
+AD008,Camera,Tech Enthusiasts,South America,492.84,3725,54,2,0.014,0.037,Buy Camera now! Exclusive offer for Tech Enthusiasts in South America.
+AD009,Backpack,Gamers,North America,395.72,1816,34,9,0.019,0.265,Buy Backpack now! Exclusive offer for Gamers in North America.
+AD010,Laptop,Travelers,Africa,238.0,6199,848,123,0.137,0.145,Buy Laptop now! Exclusive offer for Travelers in Africa.
+AD011,Smartwatch,Students,Africa,239.61,7307,215,35,0.029,0.163,Buy Smartwatch now! Exclusive offer for Students in Africa.
+AD012,Backpack,Students,Europe,381.91,7174,606,118,0.084,0.195,Buy Backpack now! Exclusive offer for Students in Europe.
+AD013,Backpack,Tech Enthusiasts,Europe,157.45,4183,282,78,0.067,0.277,Buy Backpack now! Exclusive offer for Tech Enthusiasts in Europe.
+AD014,Protein Powder,Professionals,South America,99.71,7727,453,11,0.059,0.024,Buy Protein Powder now! Exclusive offer for Professionals in South America.
+AD015,Headphones,Professionals,South America,209.58,3773,513,78,0.136,0.152,Buy Headphones now! Exclusive offer for Professionals in South America.
+AD016,Laptop,Travelers,Asia,179.26,7500,97,20,0.013,0.206,Buy Laptop now! Exclusive offer for Travelers in Asia.
+AD017,Sneakers,Tech Enthusiasts,Asia,183.34,645,66,14,0.102,0.212,Buy Sneakers now! Exclusive offer for Tech Enthusiasts in Asia.
+AD018,Backpack,Students,South America,155.12,5510,798,170,0.145,0.213,Buy Backpack now! Exclusive offer for Students in South America.
+AD019,Headphones,Professionals,South America,68.94,3540,313,18,0.088,0.058,Buy Headphones now! Exclusive offer for Professionals in South America.
+AD020,Sneakers,Tech Enthusiasts,North America,58.04,982,138,14,0.141,0.101,Buy Sneakers now! Exclusive offer for Tech Enthusiasts in North America.
+AD021,Laptop,Parents,Europe,494.48,3679,63,7,0.017,0.111,Buy Laptop now! Exclusive offer for Parents in Europe.
+AD022,Smartphone,Professionals,Asia,242.5,1749,120,29,0.069,0.242,Buy Smartphone now! Exclusive offer for Professionals in Asia.
+AD023,T-Shirt,Gamers,Europe,222.95,1130,52,5,0.046,0.096,Buy T-Shirt now! Exclusive offer for Gamers in Europe.
+AD024,Headphones,Parents,Europe,355.84,9353,1050,82,0.112,0.078,Buy Headphones now! Exclusive offer for Parents in Europe.
+AD025,Sunglasses,Artists,South America,148.21,3352,494,142,0.147,0.287,Buy Sunglasses now! Exclusive offer for Artists in South America.
+AD026,Smartphone,Professionals,North America,477.48,1487,68,1,0.046,0.015,Buy Smartphone now! Exclusive offer for Professionals in North America.
+AD027,T-Shirt,Students,Africa,403.86,8122,825,246,0.102,0.298,Buy T-Shirt now! Exclusive offer for Students in Africa.
+AD028,Protein Powder,Fitness Lovers,North America,90.23,7827,295,61,0.038,0.207,Buy Protein Powder now! Exclusive offer for Fitness Lovers in North America.
+AD029,Camera,Parents,North America,237.91,9341,832,209,0.089,0.251,Buy Camera now! Exclusive offer for Parents in North America.
+AD030,Smartwatch,Artists,Europe,445.6,9660,724,74,0.075,0.102,Buy Smartwatch now! Exclusive offer for Artists in Europe.
+AD031,Sunglasses,Travelers,North America,475.13,1600,233,5,0.146,0.021,Buy Sunglasses now! Exclusive offer for Travelers in North America.
+AD032,Protein Powder,Travelers,Asia,260.33,7152,680,154,0.095,0.226,Buy Protein Powder now! Exclusive offer for Travelers in Asia.
+AD033,Laptop,Students,Europe,326.04,9132,538,136,0.059,0.253,Buy Laptop now! Exclusive offer for Students in Europe.
+AD034,Protein Powder,Professionals,Asia,125.17,7921,205,46,0.026,0.224,Buy Protein Powder now! Exclusive offer for Professionals in Asia.
+AD035,Camera,Tech Enthusiasts,Africa,496.03,5516,171,10,0.031,0.058,Buy Camera now! Exclusive offer for Tech Enthusiasts in Africa.
+AD036,Laptop,Professionals,Europe,154.25,1269,52,12,0.041,0.231,Buy Laptop now! Exclusive offer for Professionals in Europe.
+AD037,Sunglasses,Students,Africa,474.23,1843,83,19,0.045,0.229,Buy Sunglasses now! Exclusive offer for Students in Africa.
+AD038,Camera,Travelers,Europe,342.34,4858,627,128,0.129,0.204,Buy Camera now! Exclusive offer for Travelers in Europe.
+AD039,Sneakers,Professionals,South America,323.48,7280,644,151,0.088,0.234,Buy Sneakers now! Exclusive offer for Professionals in South America.
+AD040,Smartwatch,Travelers,North America,280.71,7102,591,151,0.083,0.255,Buy Smartwatch now! Exclusive offer for Travelers in North America.
+AD041,Sunglasses,Parents,South America,153.8,2849,74,14,0.026,0.189,Buy Sunglasses now! Exclusive offer for Parents in South America.
+AD042,Sneakers,Artists,Africa,129.44,6199,808,36,0.13,0.045,Buy Sneakers now! Exclusive offer for Artists in Africa.
+AD043,T-Shirt,Tech Enthusiasts,North America,149.22,1741,193,30,0.111,0.155,Buy T-Shirt now! Exclusive offer for Tech Enthusiasts in North America.
+AD044,Sunglasses,Parents,Europe,133.9,1625,31,1,0.019,0.032,Buy Sunglasses now! Exclusive offer for Parents in Europe.
+AD045,T-Shirt,Travelers,North America,400.81,9882,1078,144,0.109,0.134,Buy T-Shirt now! Exclusive offer for Travelers in North America.
+AD046,Laptop,Travelers,Asia,207.56,7264,625,83,0.086,0.133,Buy Laptop now! Exclusive offer for Travelers in Asia.
+AD047,Sneakers,Fitness Lovers,North America,76.03,5601,120,4,0.021,0.033,Buy Sneakers now! Exclusive offer for Fitness Lovers in North America.
+AD048,Smartwatch,Fitness Lovers,Asia,486.1,8343,618,72,0.074,0.117,Buy Smartwatch now! Exclusive offer for Fitness Lovers in Asia.
+AD049,Camera,Parents,North America,447.7,572,44,2,0.077,0.045,Buy Camera now! Exclusive offer for Parents in North America.
+AD050,Backpack,Gamers,Asia,467.49,5972,198,48,0.033,0.242,Buy Backpack now! Exclusive offer for Gamers in Asia.
+AD051,Protein Powder,Parents,Africa,497.71,5689,810,231,0.142,0.285,Buy Protein Powder now! Exclusive offer for Parents in Africa.
+AD052,Smartphone,Fitness Lovers,South America,128.25,2972,383,15,0.129,0.039,Buy Smartphone now! Exclusive offer for Fitness Lovers in South America.
+AD053,Smartwatch,Travelers,Europe,228.31,1207,125,35,0.104,0.28,Buy Smartwatch now! Exclusive offer for Travelers in Europe.
+AD054,Sneakers,Students,North America,391.21,2304,172,28,0.075,0.163,Buy Sneakers now! Exclusive offer for Students in North America.
+AD055,Backpack,Parents,South America,363.21,7204,487,50,0.068,0.103,Buy Backpack now! Exclusive offer for Parents in South America.
+AD056,Smartwatch,Travelers,Europe,119.25,4213,426,17,0.101,0.04,Buy Smartwatch now! Exclusive offer for Travelers in Europe.
+AD057,Sneakers,Students,Europe,417.12,5551,479,76,0.086,0.159,Buy Sneakers now! Exclusive offer for Students in Europe.
+AD058,Headphones,Students,Asia,151.0,2975,55,13,0.018,0.236,Buy Headphones now! Exclusive offer for Students in Asia.
+AD059,Headphones,Fitness Lovers,Africa,150.72,4110,335,73,0.082,0.218,Buy Headphones now! Exclusive offer for Fitness Lovers in Africa.
+AD060,T-Shirt,Parents,Africa,291.64,4755,584,19,0.123,0.033,Buy T-Shirt now! Exclusive offer for Parents in Africa.
+AD061,Smartwatch,Professionals,South America,316.82,7897,586,23,0.074,0.039,Buy Smartwatch now! Exclusive offer for Professionals in South America.
+AD062,Headphones,Tech Enthusiasts,Africa,311.04,2235,38,5,0.017,0.132,Buy Headphones now! Exclusive offer for Tech Enthusiasts in Africa.
+AD063,Sneakers,Fitness Lovers,North America,91.17,8758,1051,107,0.12,0.102,Buy Sneakers now! Exclusive offer for Fitness Lovers in North America.
+AD064,T-Shirt,Fitness Lovers,Africa,444.86,8479,323,27,0.038,0.084,Buy T-Shirt now! Exclusive offer for Fitness Lovers in Africa.
+AD065,Sneakers,Professionals,South America,169.52,2928,135,13,0.046,0.096,Buy Sneakers now! Exclusive offer for Professionals in South America.
+AD066,T-Shirt,Tech Enthusiasts,Africa,108.28,7926,262,64,0.033,0.244,Buy T-Shirt now! Exclusive offer for Tech Enthusiasts in Africa.
+AD067,Smartwatch,Travelers,North America,449.94,9033,507,142,0.056,0.28,Buy Smartwatch now! Exclusive offer for Travelers in North America.
+AD068,Backpack,Gamers,Asia,480.04,5749,666,88,0.116,0.132,Buy Backpack now! Exclusive offer for Gamers in Asia.
+AD069,Camera,Parents,South America,437.96,5791,478,130,0.083,0.272,Buy Camera now! Exclusive offer for Parents in South America.
+AD070,Sunglasses,Gamers,Asia,414.28,3317,128,14,0.039,0.109,Buy Sunglasses now! Exclusive offer for Gamers in Asia.
+AD071,Backpack,Travelers,Asia,344.86,9924,1318,202,0.133,0.153,Buy Backpack now! Exclusive offer for Travelers in Asia.
+AD072,Laptop,Artists,Asia,297.89,4374,582,48,0.133,0.082,Buy Laptop now! Exclusive offer for Artists in Asia.
+AD073,Sneakers,Fitness Lovers,Europe,89.14,4711,621,123,0.132,0.198,Buy Sneakers now! Exclusive offer for Fitness Lovers in Europe.
+AD074,Laptop,Tech Enthusiasts,Europe,233.8,1161,50,14,0.043,0.28,Buy Laptop now! Exclusive offer for Tech Enthusiasts in Europe.
+AD075,Backpack,Fitness Lovers,Asia,217.71,3874,283,53,0.073,0.187,Buy Backpack now! Exclusive offer for Fitness Lovers in Asia.
+AD076,T-Shirt,Students,South America,166.89,9708,1435,172,0.148,0.12,Buy T-Shirt now! Exclusive offer for Students in South America.
+AD077,Sunglasses,Fitness Lovers,North America,375.54,707,83,16,0.117,0.193,Buy Sunglasses now! Exclusive offer for Fitness Lovers in North America.
+AD078,Sunglasses,Fitness Lovers,North America,273.14,3165,43,2,0.014,0.047,Buy Sunglasses now! Exclusive offer for Fitness Lovers in North America.
+AD079,Smartphone,Travelers,Africa,86.47,2993,57,15,0.019,0.263,Buy Smartphone now! Exclusive offer for Travelers in Africa.
+AD080,Sunglasses,Travelers,South America,149.08,7313,548,88,0.075,0.161,Buy Sunglasses now! Exclusive offer for Travelers in South America.
+AD081,Camera,Travelers,Europe,357.47,1132,155,22,0.137,0.142,Buy Camera now! Exclusive offer for Travelers in Europe.
+AD082,Sunglasses,Gamers,Asia,84.26,3583,306,56,0.085,0.183,Buy Sunglasses now! Exclusive offer for Gamers in Asia.
+AD083,Backpack,Students,Africa,433.04,4219,336,65,0.08,0.193,Buy Backpack now! Exclusive offer for Students in Africa.
+AD084,Smartphone,Artists,North America,272.82,7623,188,7,0.025,0.037,Buy Smartphone now! Exclusive offer for Artists in North America.
+AD085,Backpack,Artists,Europe,266.26,2179,222,46,0.102,0.207,Buy Backpack now! Exclusive offer for Artists in Europe.
+AD086,Backpack,Travelers,Europe,316.58,736,92,8,0.125,0.087,Buy Backpack now! Exclusive offer for Travelers in Europe.
+AD087,Protein Powder,Tech Enthusiasts,Asia,421.11,7946,502,110,0.063,0.219,Buy Protein Powder now! Exclusive offer for Tech Enthusiasts in Asia.
+AD088,Smartphone,Gamers,North America,206.51,4943,586,146,0.119,0.249,Buy Smartphone now! Exclusive offer for Gamers in North America.
+AD089,Backpack,Professionals,South America,355.11,7270,1054,258,0.145,0.245,Buy Backpack now! Exclusive offer for Professionals in South America.
+AD090,Protein Powder,Tech Enthusiasts,Europe,304.58,6599,254,44,0.038,0.173,Buy Protein Powder now! Exclusive offer for Tech Enthusiasts in Europe.
+AD091,Protein Powder,Parents,Asia,170.16,9055,753,124,0.083,0.165,Buy Protein Powder now! Exclusive offer for Parents in Asia.
+AD092,Smartphone,Parents,South America,445.38,2868,143,8,0.05,0.056,Buy Smartphone now! Exclusive offer for Parents in South America.
+AD093,Laptop,Tech Enthusiasts,North America,408.84,785,94,22,0.12,0.234,Buy Laptop now! Exclusive offer for Tech Enthusiasts in North America.
+AD094,T-Shirt,Travelers,Europe,346.3,648,58,5,0.09,0.086,Buy T-Shirt now! Exclusive offer for Travelers in Europe.
+AD095,Camera,Professionals,South America,432.76,4537,448,71,0.099,0.158,Buy Camera now! Exclusive offer for Professionals in South America.
+AD096,T-Shirt,Professionals,South America,440.28,7049,857,85,0.122,0.099,Buy T-Shirt now! Exclusive offer for Professionals in South America.
+AD097,Sunglasses,Gamers,South America,368.76,7621,498,28,0.065,0.056,Buy Sunglasses now! Exclusive offer for Gamers in South America.
+AD098,Camera,Professionals,Europe,426.66,5395,745,146,0.138,0.196,Buy Camera now! Exclusive offer for Professionals in Europe.
+AD099,Sunglasses,Parents,Europe,363.86,5780,489,17,0.085,0.035,Buy Sunglasses now! Exclusive offer for Parents in Europe.
+AD100,Backpack,Students,Africa,356.06,1512,48,11,0.032,0.229,Buy Backpack now! Exclusive offer for Students in Africa.
+AD101,Sneakers,Travelers,North America,328.38,3285,352,38,0.107,0.108,Buy Sneakers now! Exclusive offer for Travelers in North America.
+AD102,Smartphone,Professionals,Asia,388.72,4225,511,10,0.121,0.02,Buy Smartphone now! Exclusive offer for Professionals in Asia.
+AD103,Camera,Gamers,South America,121.37,5076,275,44,0.054,0.16,Buy Camera now! Exclusive offer for Gamers in South America.
+AD104,Camera,Parents,Africa,446.39,6282,816,27,0.13,0.033,Buy Camera now! Exclusive offer for Parents in Africa.
+AD105,Backpack,Students,Asia,442.33,6757,924,89,0.137,0.096,Buy Backpack now! Exclusive offer for Students in Asia.
+AD106,Laptop,Fitness Lovers,Africa,63.16,2908,141,30,0.048,0.213,Buy Laptop now! Exclusive offer for Fitness Lovers in Africa.
+AD107,Protein Powder,Fitness Lovers,Europe,421.62,840,124,4,0.148,0.032,Buy Protein Powder now! Exclusive offer for Fitness Lovers in Europe.
+AD108,Backpack,Students,South America,107.99,3317,98,24,0.03,0.245,Buy Backpack now! Exclusive offer for Students in South America.
+AD109,Headphones,Parents,Asia,200.8,2996,114,2,0.038,0.018,Buy Headphones now! Exclusive offer for Parents in Asia.
+AD110,Protein Powder,Gamers,Asia,384.58,6462,231,20,0.036,0.087,Buy Protein Powder now! Exclusive offer for Gamers in Asia.
+AD111,Smartphone,Students,Asia,122.34,5799,783,178,0.135,0.227,Buy Smartphone now! Exclusive offer for Students in Asia.
+AD112,Protein Powder,Travelers,Asia,418.09,8074,820,89,0.102,0.109,Buy Protein Powder now! Exclusive offer for Travelers in Asia.
+AD113,Laptop,Travelers,Asia,424.46,2189,68,3,0.031,0.044,Buy Laptop now! Exclusive offer for Travelers in Asia.
+AD114,Protein Powder,Fitness Lovers,Africa,278.36,3767,269,32,0.071,0.119,Buy Protein Powder now! Exclusive offer for Fitness Lovers in Africa.
+AD115,Smartphone,Professionals,South America,52.87,4906,471,45,0.096,0.096,Buy Smartphone now! Exclusive offer for Professionals in South America.
+AD116,Laptop,Gamers,Europe,179.17,8953,194,49,0.022,0.253,Buy Laptop now! Exclusive offer for Gamers in Europe.
+AD117,T-Shirt,Fitness Lovers,Europe,327.62,1942,259,27,0.133,0.104,Buy T-Shirt now! Exclusive offer for Fitness Lovers in Europe.
+AD118,Camera,Professionals,Europe,491.53,9097,1114,268,0.122,0.241,Buy Camera now! Exclusive offer for Professionals in Europe.
+AD119,Camera,Professionals,Europe,334.32,4937,398,107,0.081,0.269,Buy Camera now! Exclusive offer for Professionals in Europe.
+AD120,Sunglasses,Artists,Africa,166.91,5935,862,121,0.145,0.14,Buy Sunglasses now! Exclusive offer for Artists in Africa.
+AD121,T-Shirt,Travelers,North America,335.3,8935,611,167,0.068,0.273,Buy T-Shirt now! Exclusive offer for Travelers in North America.
+AD122,T-Shirt,Parents,South America,292.99,4607,680,85,0.148,0.125,Buy T-Shirt now! Exclusive offer for Parents in South America.
+AD123,Protein Powder,Tech Enthusiasts,Asia,400.93,1060,109,31,0.103,0.284,Buy Protein Powder now! Exclusive offer for Tech Enthusiasts in Asia.
+AD124,Camera,Parents,North America,98.14,9285,917,41,0.099,0.045,Buy Camera now! Exclusive offer for Parents in North America.
+AD125,Smartphone,Tech Enthusiasts,Europe,392.46,6048,200,42,0.033,0.21,Buy Smartphone now! Exclusive offer for Tech Enthusiasts in Europe.
+AD126,Smartwatch,Students,North America,293.57,2326,310,49,0.133,0.158,Buy Smartwatch now! Exclusive offer for Students in North America.
+AD127,Smartwatch,Travelers,South America,483.35,8129,567,72,0.07,0.127,Buy Smartwatch now! Exclusive offer for Travelers in South America.
+AD128,Laptop,Professionals,Asia,203.84,8825,288,56,0.033,0.194,Buy Laptop now! Exclusive offer for Professionals in Asia.
+AD129,Camera,Gamers,Asia,334.68,3638,42,9,0.012,0.214,Buy Camera now! Exclusive offer for Gamers in Asia.
+AD130,Camera,Tech Enthusiasts,South America,469.41,8193,723,15,0.088,0.021,Buy Camera now! Exclusive offer for Tech Enthusiasts in South America.
+AD131,Smartwatch,Parents,South America,96.13,8764,734,48,0.084,0.065,Buy Smartwatch now! Exclusive offer for Parents in South America.
+AD132,Camera,Professionals,Europe,471.75,8342,923,202,0.111,0.219,Buy Camera now! Exclusive offer for Professionals in Europe.
+AD133,Protein Powder,Tech Enthusiasts,Asia,359.55,7221,972,200,0.135,0.206,Buy Protein Powder now! Exclusive offer for Tech Enthusiasts in Asia.
+AD134,Headphones,Tech Enthusiasts,North America,80.53,7502,158,45,0.021,0.285,Buy Headphones now! Exclusive offer for Tech Enthusiasts in North America.
+AD135,Sneakers,Artists,Africa,185.43,4725,531,123,0.112,0.232,Buy Sneakers now! Exclusive offer for Artists in Africa.
+AD136,T-Shirt,Tech Enthusiasts,Africa,368.68,3478,126,36,0.036,0.286,Buy T-Shirt now! Exclusive offer for Tech Enthusiasts in Africa.
+AD137,Sunglasses,Gamers,South America,80.31,7873,1024,221,0.13,0.216,Buy Sunglasses now! Exclusive offer for Gamers in South America.
+AD138,Laptop,Travelers,Europe,311.98,6407,798,82,0.125,0.103,Buy Laptop now! Exclusive offer for Travelers in Europe.
+AD139,Headphones,Gamers,Africa,205.65,6597,565,27,0.086,0.048,Buy Headphones now! Exclusive offer for Gamers in Africa.
+AD140,Smartwatch,Fitness Lovers,Asia,329.41,6156,673,160,0.109,0.238,Buy Smartwatch now! Exclusive offer for Fitness Lovers in Asia.
+AD141,T-Shirt,Professionals,South America,70.58,9484,512,102,0.054,0.199,Buy T-Shirt now! Exclusive offer for Professionals in South America.
+AD142,Camera,Travelers,North America,442.19,4759,361,12,0.076,0.033,Buy Camera now! Exclusive offer for Travelers in North America.
+AD143,Sunglasses,Artists,South America,488.07,8786,1098,132,0.125,0.12,Buy Sunglasses now! Exclusive offer for Artists in South America.
+AD144,Camera,Travelers,North America,486.0,6401,475,136,0.074,0.286,Buy Camera now! Exclusive offer for Travelers in North America.
+AD145,Smartphone,Travelers,South America,387.34,9825,590,94,0.06,0.159,Buy Smartphone now! Exclusive offer for Travelers in South America.
+AD146,Smartphone,Parents,South America,108.54,5417,428,60,0.079,0.14,Buy Smartphone now! Exclusive offer for Parents in South America.
+AD147,Sunglasses,Travelers,South America,391.22,8929,1124,166,0.126,0.148,Buy Sunglasses now! Exclusive offer for Travelers in South America.
+AD148,Sunglasses,Artists,North America,61.06,3030,172,13,0.057,0.076,Buy Sunglasses now! Exclusive offer for Artists in North America.
+AD149,Smartwatch,Gamers,North America,59.96,2460,84,10,0.034,0.119,Buy Smartwatch now! Exclusive offer for Gamers in North America.
+AD150,Sunglasses,Travelers,South America,195.62,7545,827,102,0.11,0.123,Buy Sunglasses now! Exclusive offer for Travelers in South America.
+AD151,Protein Powder,Students,Africa,269.89,1548,194,6,0.125,0.031,Buy Protein Powder now! Exclusive offer for Students in Africa.
+AD152,Camera,Professionals,Europe,396.68,6272,151,35,0.024,0.232,Buy Camera now! Exclusive offer for Professionals in Europe.
+AD153,Headphones,Travelers,Europe,357.48,3029,132,18,0.044,0.136,Buy Headphones now! Exclusive offer for Travelers in Europe.
+AD154,Backpack,Professionals,Europe,250.66,3464,103,25,0.03,0.243,Buy Backpack now! Exclusive offer for Professionals in Europe.
+AD155,Sunglasses,Students,North America,173.13,7637,448,115,0.059,0.257,Buy Sunglasses now! Exclusive offer for Students in North America.
+AD156,Laptop,Students,North America,498.71,1463,106,8,0.072,0.075,Buy Laptop now! Exclusive offer for Students in North America.
+AD157,Smartphone,Professionals,Africa,241.78,1036,118,24,0.114,0.203,Buy Smartphone now! Exclusive offer for Professionals in Africa.
+AD158,Protein Powder,Tech Enthusiasts,Europe,253.12,7840,793,120,0.101,0.151,Buy Protein Powder now! Exclusive offer for Tech Enthusiasts in Europe.
+AD159,T-Shirt,Fitness Lovers,Europe,123.63,7679,744,198,0.097,0.266,Buy T-Shirt now! Exclusive offer for Fitness Lovers in Europe.
+AD160,Backpack,Parents,South America,407.66,8467,502,40,0.059,0.08,Buy Backpack now! Exclusive offer for Parents in South America.
+AD161,Headphones,Tech Enthusiasts,North America,362.16,9234,1180,247,0.128,0.209,Buy Headphones now! Exclusive offer for Tech Enthusiasts in North America.
+AD162,Backpack,Tech Enthusiasts,Europe,149.35,1345,102,19,0.076,0.186,Buy Backpack now! Exclusive offer for Tech Enthusiasts in Europe.
+AD163,Sunglasses,Gamers,Africa,87.07,6277,923,94,0.147,0.102,Buy Sunglasses now! Exclusive offer for Gamers in Africa.
+AD164,Smartwatch,Parents,Africa,356.22,3536,349,20,0.099,0.057,Buy Smartwatch now! Exclusive offer for Parents in Africa.
+AD165,Smartphone,Parents,Europe,344.53,6447,178,36,0.028,0.202,Buy Smartphone now! Exclusive offer for Parents in Europe.
+AD166,Smartphone,Tech Enthusiasts,North America,172.97,2994,313,70,0.105,0.224,Buy Smartphone now! Exclusive offer for Tech Enthusiasts in North America.
+AD167,T-Shirt,Travelers,Africa,477.89,3219,178,19,0.055,0.107,Buy T-Shirt now! Exclusive offer for Travelers in Africa.
+AD168,Smartwatch,Gamers,South America,117.98,2384,252,50,0.106,0.198,Buy Smartwatch now! Exclusive offer for Gamers in South America.
+AD169,Camera,Gamers,Africa,244.55,4849,95,12,0.02,0.126,Buy Camera now! Exclusive offer for Gamers in Africa.
+AD170,Sneakers,Students,Asia,474.63,5679,195,42,0.034,0.215,Buy Sneakers now! Exclusive offer for Students in Asia.
+AD171,Protein Powder,Artists,Asia,238.88,7110,922,69,0.13,0.075,Buy Protein Powder now! Exclusive offer for Artists in Asia.
+AD172,Smartphone,Parents,North America,337.34,6930,289,77,0.042,0.266,Buy Smartphone now! Exclusive offer for Parents in North America.
+AD173,Laptop,Tech Enthusiasts,Europe,228.92,7654,973,97,0.127,0.1,Buy Laptop now! Exclusive offer for Tech Enthusiasts in Europe.
+AD174,Smartphone,Students,North America,173.4,6988,343,42,0.049,0.122,Buy Smartphone now! Exclusive offer for Students in North America.
+AD175,Backpack,Professionals,North America,492.79,5237,523,18,0.1,0.034,Buy Backpack now! Exclusive offer for Professionals in North America.
+AD176,Smartphone,Fitness Lovers,North America,234.2,7025,752,38,0.107,0.051,Buy Smartphone now! Exclusive offer for Fitness Lovers in North America.
+AD177,Smartphone,Artists,North America,452.34,4350,355,58,0.082,0.163,Buy Smartphone now! Exclusive offer for Artists in North America.
+AD178,Sneakers,Artists,South America,153.48,1189,62,5,0.052,0.081,Buy Sneakers now! Exclusive offer for Artists in South America.
+AD179,Sneakers,Artists,South America,145.9,5675,225,57,0.04,0.253,Buy Sneakers now! Exclusive offer for Artists in South America.
+AD180,Headphones,Gamers,Africa,64.01,9148,133,3,0.015,0.023,Buy Headphones now! Exclusive offer for Gamers in Africa.
+AD181,Camera,Professionals,Asia,343.25,5578,293,36,0.053,0.123,Buy Camera now! Exclusive offer for Professionals in Asia.
+AD182,Laptop,Artists,North America,215.84,5948,603,69,0.101,0.114,Buy Laptop now! Exclusive offer for Artists in North America.
+AD183,Smartphone,Professionals,Africa,438.96,1679,237,6,0.141,0.025,Buy Smartphone now! Exclusive offer for Professionals in Africa.
+AD184,Smartphone,Travelers,Asia,262.94,9574,1263,69,0.132,0.055,Buy Smartphone now! Exclusive offer for Travelers in Asia.
+AD185,Protein Powder,Artists,Europe,485.69,6906,809,109,0.117,0.135,Buy Protein Powder now! Exclusive offer for Artists in Europe.
+AD186,Sneakers,Fitness Lovers,South America,133.49,9091,1094,172,0.12,0.157,Buy Sneakers now! Exclusive offer for Fitness Lovers in South America.
+AD187,Laptop,Professionals,Asia,440.88,7407,763,101,0.103,0.132,Buy Laptop now! Exclusive offer for Professionals in Asia.
+AD188,T-Shirt,Professionals,Europe,399.47,9300,431,72,0.046,0.167,Buy T-Shirt now! Exclusive offer for Professionals in Europe.
+AD189,Headphones,Fitness Lovers,Asia,396.91,2138,292,54,0.137,0.185,Buy Headphones now! Exclusive offer for Fitness Lovers in Asia.
+AD190,Camera,Artists,South America,430.15,6171,641,14,0.104,0.022,Buy Camera now! Exclusive offer for Artists in South America.
+AD191,Smartwatch,Fitness Lovers,South America,392.46,7428,657,98,0.088,0.149,Buy Smartwatch now! Exclusive offer for Fitness Lovers in South America.
+AD192,Camera,Professionals,Africa,331.8,1882,48,13,0.026,0.271,Buy Camera now! Exclusive offer for Professionals in Africa.
+AD193,Backpack,Fitness Lovers,North America,109.06,1903,138,22,0.073,0.159,Buy Backpack now! Exclusive offer for Fitness Lovers in North America.
+AD194,Smartphone,Professionals,Asia,64.64,9511,708,148,0.074,0.209,Buy Smartphone now! Exclusive offer for Professionals in Asia.
+AD195,Headphones,Professionals,Asia,464.38,3792,496,53,0.131,0.107,Buy Headphones now! Exclusive offer for Professionals in Asia.
+AD196,Backpack,Travelers,Europe,327.49,9511,822,194,0.086,0.236,Buy Backpack now! Exclusive offer for Travelers in Europe.
+AD197,Laptop,Tech Enthusiasts,South America,408.44,919,58,13,0.063,0.224,Buy Laptop now! Exclusive offer for Tech Enthusiasts in South America.
+AD198,Smartwatch,Professionals,Asia,266.69,5017,736,122,0.147,0.166,Buy Smartwatch now! Exclusive offer for Professionals in Asia.
+AD199,Sneakers,Artists,South America,102.79,3802,96,28,0.025,0.292,Buy Sneakers now! Exclusive offer for Artists in South America.
+AD200,Headphones,Students,Asia,106.33,8357,577,31,0.069,0.054,Buy Headphones now! Exclusive offer for Students in Asia.
+AD201,Headphones,Gamers,Africa,358.5,8370,132,3,0.016,0.023,Buy Headphones now! Exclusive offer for Gamers in Africa.
+AD202,Smartphone,Parents,North America,243.64,6193,703,165,0.114,0.235,Buy Smartphone now! Exclusive offer for Parents in North America.
+AD203,Sunglasses,Tech Enthusiasts,Asia,140.24,1267,175,43,0.138,0.246,Buy Sunglasses now! Exclusive offer for Tech Enthusiasts in Asia.
+AD204,Headphones,Tech Enthusiasts,South America,271.22,2544,125,6,0.049,0.048,Buy Headphones now! Exclusive offer for Tech Enthusiasts in South America.
+AD205,Protein Powder,Tech Enthusiasts,Africa,78.89,2049,266,25,0.13,0.094,Buy Protein Powder now! Exclusive offer for Tech Enthusiasts in Africa.
+AD206,Smartwatch,Travelers,Asia,311.89,6640,338,8,0.051,0.024,Buy Smartwatch now! Exclusive offer for Travelers in Asia.
+AD207,Smartwatch,Professionals,Europe,171.05,4216,579,59,0.137,0.102,Buy Smartwatch now! Exclusive offer for Professionals in Europe.
+AD208,Protein Powder,Travelers,North America,408.9,4981,575,135,0.115,0.235,Buy Protein Powder now! Exclusive offer for Travelers in North America.
+AD209,T-Shirt,Professionals,Asia,189.66,8398,1030,169,0.123,0.164,Buy T-Shirt now! Exclusive offer for Professionals in Asia.
+AD210,Protein Powder,Artists,Africa,254.85,7048,88,10,0.012,0.114,Buy Protein Powder now! Exclusive offer for Artists in Africa.
+AD211,Protein Powder,Travelers,Europe,55.23,2793,404,50,0.145,0.124,Buy Protein Powder now! Exclusive offer for Travelers in Europe.
+AD212,Smartwatch,Travelers,Africa,82.6,5337,596,12,0.112,0.02,Buy Smartwatch now! Exclusive offer for Travelers in Africa.
+AD213,Camera,Gamers,Africa,226.62,8258,434,45,0.053,0.104,Buy Camera now! Exclusive offer for Gamers in Africa.
+AD214,Smartwatch,Students,Europe,265.97,7293,919,184,0.126,0.2,Buy Smartwatch now! Exclusive offer for Students in Europe.
+AD215,Sunglasses,Travelers,Africa,320.01,8138,402,117,0.049,0.291,Buy Sunglasses now! Exclusive offer for Travelers in Africa.
+AD216,Smartphone,Gamers,Europe,181.25,8493,1122,288,0.132,0.257,Buy Smartphone now! Exclusive offer for Gamers in Europe.
+AD217,Backpack,Fitness Lovers,Asia,362.74,6507,167,4,0.026,0.024,Buy Backpack now! Exclusive offer for Fitness Lovers in Asia.
+AD218,Camera,Students,Europe,437.06,6042,655,177,0.108,0.27,Buy Camera now! Exclusive offer for Students in Europe.
+AD219,Sneakers,Artists,Europe,400.93,9592,822,196,0.086,0.238,Buy Sneakers now! Exclusive offer for Artists in Europe.
+AD220,Backpack,Travelers,North America,67.83,6856,161,38,0.023,0.236,Buy Backpack now! Exclusive offer for Travelers in North America.
+AD221,Smartphone,Parents,Europe,266.23,8933,391,57,0.044,0.146,Buy Smartphone now! Exclusive offer for Parents in Europe.
+AD222,Sunglasses,Tech Enthusiasts,Europe,97.22,7880,92,12,0.012,0.13,Buy Sunglasses now! Exclusive offer for Tech Enthusiasts in Europe.
+AD223,Sunglasses,Fitness Lovers,Asia,158.92,2885,218,22,0.076,0.101,Buy Sunglasses now! Exclusive offer for Fitness Lovers in Asia.
+AD224,Sneakers,Fitness Lovers,North America,494.0,4768,248,9,0.052,0.036,Buy Sneakers now! Exclusive offer for Fitness Lovers in North America.
+AD225,Camera,Artists,South America,114.12,1171,109,9,0.093,0.083,Buy Camera now! Exclusive offer for Artists in South America.
+AD226,T-Shirt,Gamers,Asia,274.5,663,34,3,0.051,0.088,Buy T-Shirt now! Exclusive offer for Gamers in Asia.
+AD227,Protein Powder,Fitness Lovers,Asia,328.17,9156,476,74,0.052,0.155,Buy Protein Powder now! Exclusive offer for Fitness Lovers in Asia.
+AD228,Camera,Students,South America,366.11,5092,580,132,0.114,0.228,Buy Camera now! Exclusive offer for Students in South America.
+AD229,T-Shirt,Travelers,Europe,301.84,5295,88,13,0.017,0.148,Buy T-Shirt now! Exclusive offer for Travelers in Europe.
+AD230,Sunglasses,Travelers,Africa,54.4,5298,722,26,0.136,0.036,Buy Sunglasses now! Exclusive offer for Travelers in Africa.
+AD231,Smartwatch,Parents,North America,196.91,6536,845,243,0.129,0.288,Buy Smartwatch now! Exclusive offer for Parents in North America.
+AD232,Smartphone,Artists,Africa,282.97,2855,295,83,0.103,0.281,Buy Smartphone now! Exclusive offer for Artists in Africa.
+AD233,Sneakers,Tech Enthusiasts,South America,89.54,6387,594,142,0.093,0.239,Buy Sneakers now! Exclusive offer for Tech Enthusiasts in South America.
+AD234,Smartphone,Gamers,Asia,207.78,8461,1141,339,0.135,0.297,Buy Smartphone now! Exclusive offer for Gamers in Asia.
+AD235,Laptop,Tech Enthusiasts,Asia,64.94,6327,227,39,0.036,0.172,Buy Laptop now! Exclusive offer for Tech Enthusiasts in Asia.
+AD236,Laptop,Fitness Lovers,North America,85.36,9237,194,56,0.021,0.289,Buy Laptop now! Exclusive offer for Fitness Lovers in North America.
+AD237,Camera,Artists,Asia,228.62,5219,227,9,0.043,0.04,Buy Camera now! Exclusive offer for Artists in Asia.
+AD238,Sunglasses,Parents,Asia,109.72,1093,132,16,0.121,0.121,Buy Sunglasses now! Exclusive offer for Parents in Asia.
+AD239,Sunglasses,Tech Enthusiasts,North America,305.39,5339,79,6,0.015,0.076,Buy Sunglasses now! Exclusive offer for Tech Enthusiasts in North America.
+AD240,Protein Powder,Students,North America,360.26,7894,723,54,0.092,0.075,Buy Protein Powder now! Exclusive offer for Students in North America.
+AD241,Protein Powder,Travelers,South America,410.26,3993,596,35,0.149,0.059,Buy Protein Powder now! Exclusive offer for Travelers in South America.
+AD242,Protein Powder,Fitness Lovers,Asia,140.07,6664,864,167,0.13,0.193,Buy Protein Powder now! Exclusive offer for Fitness Lovers in Asia.
+AD243,Smartwatch,Parents,Asia,125.37,3172,263,62,0.083,0.236,Buy Smartwatch now! Exclusive offer for Parents in Asia.
+AD244,Backpack,Tech Enthusiasts,South America,97.06,4700,88,16,0.019,0.182,Buy Backpack now! Exclusive offer for Tech Enthusiasts in South America.
+AD245,Headphones,Gamers,Europe,336.39,516,65,3,0.126,0.046,Buy Headphones now! Exclusive offer for Gamers in Europe.
+AD246,Backpack,Students,Europe,367.91,3691,346,85,0.094,0.246,Buy Backpack now! Exclusive offer for Students in Europe.
+AD247,Smartphone,Students,Europe,64.21,892,23,4,0.026,0.174,Buy Smartphone now! Exclusive offer for Students in Europe.
+AD248,Backpack,Tech Enthusiasts,South America,471.3,9116,210,27,0.023,0.129,Buy Backpack now! Exclusive offer for Tech Enthusiasts in South America.
+AD249,Smartwatch,Travelers,Asia,73.39,6772,930,194,0.137,0.209,Buy Smartwatch now! Exclusive offer for Travelers in Asia.
+AD250,Smartphone,Tech Enthusiasts,South America,293.58,1071,111,10,0.104,0.09,Buy Smartphone now! Exclusive offer for Tech Enthusiasts in South America.
+AD251,Backpack,Fitness Lovers,South America,369.08,4131,520,60,0.126,0.115,Buy Backpack now! Exclusive offer for Fitness Lovers in South America.
+AD252,Smartwatch,Tech Enthusiasts,Europe,441.94,6672,887,245,0.133,0.276,Buy Smartwatch now! Exclusive offer for Tech Enthusiasts in Europe.
+AD253,Headphones,Students,Africa,371.34,9812,883,89,0.09,0.101,Buy Headphones now! Exclusive offer for Students in Africa.
+AD254,Backpack,Parents,Asia,410.78,7677,632,95,0.082,0.15,Buy Backpack now! Exclusive offer for Parents in Asia.
+AD255,Smartwatch,Tech Enthusiasts,Europe,202.75,8933,627,168,0.07,0.268,Buy Smartwatch now! Exclusive offer for Tech Enthusiasts in Europe.
+AD256,Protein Powder,Travelers,Africa,416.67,4397,239,52,0.054,0.218,Buy Protein Powder now! Exclusive offer for Travelers in Africa.
+AD257,Sunglasses,Artists,Africa,86.05,8623,610,22,0.071,0.036,Buy Sunglasses now! Exclusive offer for Artists in Africa.
+AD258,Protein Powder,Parents,North America,452.67,2779,328,20,0.118,0.061,Buy Protein Powder now! Exclusive offer for Parents in North America.
+AD259,Sunglasses,Gamers,Asia,296.42,9480,893,19,0.094,0.021,Buy Sunglasses now! Exclusive offer for Gamers in Asia.
+AD260,Sneakers,Professionals,Africa,417.78,7951,1073,211,0.135,0.197,Buy Sneakers now! Exclusive offer for Professionals in Africa.
+AD261,Sneakers,Tech Enthusiasts,Europe,253.54,9406,677,98,0.072,0.145,Buy Sneakers now! Exclusive offer for Tech Enthusiasts in Europe.
+AD262,Sneakers,Travelers,North America,339.61,1275,121,6,0.095,0.05,Buy Sneakers now! Exclusive offer for Travelers in North America.
+AD263,Headphones,Parents,Asia,286.88,7369,724,208,0.098,0.287,Buy Headphones now! Exclusive offer for Parents in Asia.
+AD264,Protein Powder,Travelers,South America,379.22,2747,255,42,0.093,0.165,Buy Protein Powder now! Exclusive offer for Travelers in South America.
+AD265,Sunglasses,Gamers,Europe,86.73,7588,822,72,0.108,0.088,Buy Sunglasses now! Exclusive offer for Gamers in Europe.
+AD266,Smartwatch,Students,Africa,77.16,578,24,3,0.042,0.125,Buy Smartwatch now! Exclusive offer for Students in Africa.
+AD267,Smartphone,Travelers,Africa,161.2,8580,701,147,0.082,0.21,Buy Smartphone now! Exclusive offer for Travelers in Africa.
+AD268,Smartwatch,Parents,Europe,121.8,7599,186,7,0.024,0.038,Buy Smartwatch now! Exclusive offer for Parents in Europe.
+AD269,Smartphone,Travelers,Africa,442.3,4426,282,27,0.064,0.096,Buy Smartphone now! Exclusive offer for Travelers in Africa.
+AD270,Laptop,Travelers,North America,148.65,9547,747,183,0.078,0.245,Buy Laptop now! Exclusive offer for Travelers in North America.
+AD271,Smartwatch,Travelers,Asia,489.14,7840,794,118,0.101,0.149,Buy Smartwatch now! Exclusive offer for Travelers in Asia.
+AD272,Backpack,Fitness Lovers,North America,201.6,7583,1084,187,0.143,0.173,Buy Backpack now! Exclusive offer for Fitness Lovers in North America.
+AD273,Backpack,Fitness Lovers,Africa,131.95,6730,633,89,0.094,0.141,Buy Backpack now! Exclusive offer for Fitness Lovers in Africa.
+AD274,Camera,Students,South America,405.36,9723,1109,35,0.114,0.032,Buy Camera now! Exclusive offer for Students in South America.
+AD275,Protein Powder,Tech Enthusiasts,Asia,346.42,5440,439,29,0.081,0.066,Buy Protein Powder now! Exclusive offer for Tech Enthusiasts in Asia.
+AD276,Smartphone,Travelers,Asia,274.19,3771,372,53,0.099,0.142,Buy Smartphone now! Exclusive offer for Travelers in Asia.
+AD277,Smartphone,Gamers,Europe,299.91,3956,78,6,0.02,0.077,Buy Smartphone now! Exclusive offer for Gamers in Europe.
+AD278,Protein Powder,Tech Enthusiasts,Europe,373.64,8288,378,12,0.046,0.032,Buy Protein Powder now! Exclusive offer for Tech Enthusiasts in Europe.
+AD279,Headphones,Gamers,South America,152.8,9099,551,141,0.061,0.256,Buy Headphones now! Exclusive offer for Gamers in South America.
+AD280,Camera,Tech Enthusiasts,Asia,498.35,8150,620,182,0.076,0.294,Buy Camera now! Exclusive offer for Tech Enthusiasts in Asia.
+AD281,Headphones,Students,South America,488.66,3211,52,12,0.016,0.231,Buy Headphones now! Exclusive offer for Students in South America.
+AD282,Headphones,Travelers,Europe,342.65,2168,64,16,0.03,0.25,Buy Headphones now! Exclusive offer for Travelers in Europe.
+AD283,Headphones,Travelers,Europe,139.79,647,31,2,0.048,0.065,Buy Headphones now! Exclusive offer for Travelers in Europe.
+AD284,Protein Powder,Professionals,Asia,356.1,6920,1010,291,0.146,0.288,Buy Protein Powder now! Exclusive offer for Professionals in Asia.
+AD285,Headphones,Gamers,North America,82.49,865,48,3,0.055,0.062,Buy Headphones now! Exclusive offer for Gamers in North America.
+AD286,Backpack,Tech Enthusiasts,Africa,63.79,5031,389,111,0.077,0.285,Buy Backpack now! Exclusive offer for Tech Enthusiasts in Africa.
+AD287,Sneakers,Tech Enthusiasts,Europe,165.96,5830,218,65,0.037,0.298,Buy Sneakers now! Exclusive offer for Tech Enthusiasts in Europe.
+AD288,Laptop,Artists,Europe,258.18,6010,574,125,0.096,0.218,Buy Laptop now! Exclusive offer for Artists in Europe.
+AD289,Smartphone,Artists,North America,440.72,9254,456,134,0.049,0.294,Buy Smartphone now! Exclusive offer for Artists in North America.
+AD290,Smartphone,Fitness Lovers,North America,377.23,9464,368,66,0.039,0.179,Buy Smartphone now! Exclusive offer for Fitness Lovers in North America.
+AD291,Laptop,Professionals,South America,384.22,6993,575,53,0.082,0.092,Buy Laptop now! Exclusive offer for Professionals in South America.
+AD292,Protein Powder,Parents,South America,241.47,5939,63,8,0.011,0.127,Buy Protein Powder now! Exclusive offer for Parents in South America.
+AD293,Smartwatch,Artists,Africa,205.67,7011,77,14,0.011,0.182,Buy Smartwatch now! Exclusive offer for Artists in Africa.
+AD294,Protein Powder,Parents,Africa,216.97,8004,325,13,0.041,0.04,Buy Protein Powder now! Exclusive offer for Parents in Africa.
+AD295,Smartphone,Fitness Lovers,Asia,494.44,1746,26,5,0.015,0.192,Buy Smartphone now! Exclusive offer for Fitness Lovers in Asia.
+AD296,Smartphone,Fitness Lovers,South America,68.05,4339,109,32,0.025,0.294,Buy Smartphone now! Exclusive offer for Fitness Lovers in South America.
+AD297,Laptop,Fitness Lovers,Europe,440.16,9051,519,38,0.057,0.073,Buy Laptop now! Exclusive offer for Fitness Lovers in Europe.
+AD298,Headphones,Gamers,South America,310.4,2876,351,84,0.122,0.239,Buy Headphones now! Exclusive offer for Gamers in South America.
+AD299,Protein Powder,Gamers,Europe,247.38,3509,316,86,0.09,0.272,Buy Protein Powder now! Exclusive offer for Gamers in Europe.
+AD300,Sunglasses,Students,North America,376.37,9654,789,224,0.082,0.284,Buy Sunglasses now! Exclusive offer for Students in North America.
+AD301,Laptop,Students,South America,269.0,2327,118,34,0.051,0.288,Buy Laptop now! Exclusive offer for Students in South America.
+AD302,Backpack,Fitness Lovers,North America,443.04,7479,1050,174,0.14,0.166,Buy Backpack now! Exclusive offer for Fitness Lovers in North America.
+AD303,Smartphone,Professionals,Africa,455.32,9069,594,174,0.065,0.293,Buy Smartphone now! Exclusive offer for Professionals in Africa.
+AD304,Laptop,Tech Enthusiasts,Africa,239.77,4785,106,24,0.022,0.226,Buy Laptop now! Exclusive offer for Tech Enthusiasts in Africa.
+AD305,Protein Powder,Gamers,Asia,174.57,7410,714,46,0.096,0.064,Buy Protein Powder now! Exclusive offer for Gamers in Asia.
+AD306,Smartphone,Professionals,South America,316.56,9061,235,36,0.026,0.153,Buy Smartphone now! Exclusive offer for Professionals in South America.
+AD307,Smartwatch,Travelers,North America,460.56,2696,157,34,0.058,0.217,Buy Smartwatch now! Exclusive offer for Travelers in North America.
+AD308,Laptop,Gamers,Europe,144.8,4247,344,30,0.081,0.087,Buy Laptop now! Exclusive offer for Gamers in Europe.
+AD309,Camera,Gamers,Africa,330.33,9343,1236,246,0.132,0.199,Buy Camera now! Exclusive offer for Gamers in Africa.
+AD310,Smartphone,Students,Africa,334.2,6478,512,105,0.079,0.205,Buy Smartphone now! Exclusive offer for Students in Africa.
+AD311,Protein Powder,Tech Enthusiasts,Europe,379.9,6107,661,43,0.108,0.065,Buy Protein Powder now! Exclusive offer for Tech Enthusiasts in Europe.
+AD312,Sneakers,Tech Enthusiasts,North America,109.21,1269,189,33,0.149,0.175,Buy Sneakers now! Exclusive offer for Tech Enthusiasts in North America.
+AD313,Sunglasses,Artists,North America,372.12,1280,36,8,0.028,0.222,Buy Sunglasses now! Exclusive offer for Artists in North America.
+AD314,T-Shirt,Parents,South America,459.06,6803,329,52,0.048,0.158,Buy T-Shirt now! Exclusive offer for Parents in South America.
+AD315,Headphones,Parents,South America,130.86,4483,292,6,0.065,0.021,Buy Headphones now! Exclusive offer for Parents in South America.
+AD316,T-Shirt,Parents,Asia,156.89,9214,636,14,0.069,0.022,Buy T-Shirt now! Exclusive offer for Parents in Asia.
+AD317,Protein Powder,Parents,Africa,487.13,1021,68,8,0.067,0.118,Buy Protein Powder now! Exclusive offer for Parents in Africa.
+AD318,Backpack,Travelers,South America,131.44,9627,1319,368,0.137,0.279,Buy Backpack now! Exclusive offer for Travelers in South America.
+AD319,Backpack,Travelers,North America,434.47,8069,887,74,0.11,0.083,Buy Backpack now! Exclusive offer for Travelers in North America.
+AD320,Sneakers,Gamers,Europe,271.53,6284,597,117,0.095,0.196,Buy Sneakers now! Exclusive offer for Gamers in Europe.
+AD321,Headphones,Fitness Lovers,North America,161.25,5083,270,22,0.053,0.081,Buy Headphones now! Exclusive offer for Fitness Lovers in North America.
+AD322,Camera,Students,Africa,441.84,6446,807,88,0.125,0.109,Buy Camera now! Exclusive offer for Students in Africa.
+AD323,Sneakers,Students,North America,250.39,5441,781,201,0.144,0.257,Buy Sneakers now! Exclusive offer for Students in North America.
+AD324,T-Shirt,Parents,Asia,281.67,6767,845,189,0.125,0.224,Buy T-Shirt now! Exclusive offer for Parents in Asia.
+AD325,Sneakers,Gamers,Africa,211.66,7628,77,3,0.01,0.039,Buy Sneakers now! Exclusive offer for Gamers in Africa.
+AD326,T-Shirt,Artists,Europe,316.83,2961,293,41,0.099,0.14,Buy T-Shirt now! Exclusive offer for Artists in Europe.
+AD327,Smartphone,Professionals,Asia,123.59,1185,20,0,0.017,0.0,Buy Smartphone now! Exclusive offer for Professionals in Asia.
+AD328,Backpack,Fitness Lovers,Africa,225.99,2660,122,18,0.046,0.148,Buy Backpack now! Exclusive offer for Fitness Lovers in Africa.
+AD329,Smartphone,Gamers,Europe,486.24,7531,138,28,0.018,0.203,Buy Smartphone now! Exclusive offer for Gamers in Europe.
+AD330,Sunglasses,Fitness Lovers,Asia,166.16,5841,552,29,0.095,0.053,Buy Sunglasses now! Exclusive offer for Fitness Lovers in Asia.
+AD331,Headphones,Fitness Lovers,Asia,345.53,538,57,5,0.106,0.088,Buy Headphones now! Exclusive offer for Fitness Lovers in Asia.
+AD332,Camera,Fitness Lovers,Africa,196.34,5375,139,18,0.026,0.129,Buy Camera now! Exclusive offer for Fitness Lovers in Africa.
+AD333,T-Shirt,Gamers,South America,398.06,1756,111,30,0.063,0.27,Buy T-Shirt now! Exclusive offer for Gamers in South America.
+AD334,Camera,Parents,Asia,108.89,8197,605,180,0.074,0.298,Buy Camera now! Exclusive offer for Parents in Asia.
+AD335,T-Shirt,Students,Asia,486.42,2696,166,5,0.062,0.03,Buy T-Shirt now! Exclusive offer for Students in Asia.
+AD336,Protein Powder,Students,Europe,254.21,7665,206,48,0.027,0.233,Buy Protein Powder now! Exclusive offer for Students in Europe.
+AD337,Sneakers,Parents,North America,156.22,801,54,6,0.067,0.111,Buy Sneakers now! Exclusive offer for Parents in North America.
+AD338,Sunglasses,Fitness Lovers,Africa,83.07,8027,924,120,0.115,0.13,Buy Sunglasses now! Exclusive offer for Fitness Lovers in Africa.
+AD339,Backpack,Professionals,Africa,126.39,6881,137,31,0.02,0.226,Buy Backpack now! Exclusive offer for Professionals in Africa.
+AD340,T-Shirt,Tech Enthusiasts,South America,283.9,1146,24,6,0.021,0.25,Buy T-Shirt now! Exclusive offer for Tech Enthusiasts in South America.
+AD341,Camera,Gamers,South America,201.65,9289,554,158,0.06,0.285,Buy Camera now! Exclusive offer for Gamers in South America.
+AD342,Sunglasses,Tech Enthusiasts,Africa,423.0,9353,1326,240,0.142,0.181,Buy Sunglasses now! Exclusive offer for Tech Enthusiasts in Africa.
+AD343,Smartwatch,Artists,South America,243.9,4830,500,59,0.104,0.118,Buy Smartwatch now! Exclusive offer for Artists in South America.
+AD344,Smartwatch,Parents,Europe,161.92,7503,787,189,0.105,0.24,Buy Smartwatch now! Exclusive offer for Parents in Europe.
+AD345,Smartphone,Professionals,Africa,327.72,4037,244,22,0.06,0.09,Buy Smartphone now! Exclusive offer for Professionals in Africa.
+AD346,Backpack,Gamers,South America,368.05,5058,470,83,0.093,0.177,Buy Backpack now! Exclusive offer for Gamers in South America.
+AD347,Protein Powder,Parents,Africa,125.17,7079,80,9,0.011,0.112,Buy Protein Powder now! Exclusive offer for Parents in Africa.
+AD348,Camera,Fitness Lovers,North America,125.43,8974,888,181,0.099,0.204,Buy Camera now! Exclusive offer for Fitness Lovers in North America.
+AD349,Sneakers,Students,Asia,66.5,4582,631,55,0.138,0.087,Buy Sneakers now! Exclusive offer for Students in Asia.
+AD350,Sneakers,Tech Enthusiasts,Africa,381.38,4683,448,32,0.096,0.071,Buy Sneakers now! Exclusive offer for Tech Enthusiasts in Africa.
+AD351,Camera,Travelers,Asia,348.71,9152,1210,335,0.132,0.277,Buy Camera now! Exclusive offer for Travelers in Asia.
+AD352,Headphones,Travelers,South America,263.58,4254,473,22,0.111,0.047,Buy Headphones now! Exclusive offer for Travelers in South America.
+AD353,Protein Powder,Professionals,Asia,429.88,2224,59,9,0.027,0.153,Buy Protein Powder now! Exclusive offer for Professionals in Asia.
+AD354,Sunglasses,Fitness Lovers,Africa,412.55,1876,255,20,0.136,0.078,Buy Sunglasses now! Exclusive offer for Fitness Lovers in Africa.
+AD355,T-Shirt,Artists,North America,313.41,9206,177,5,0.019,0.028,Buy T-Shirt now! Exclusive offer for Artists in North America.
+AD356,Headphones,Tech Enthusiasts,South America,440.72,9394,796,23,0.085,0.029,Buy Headphones now! Exclusive offer for Tech Enthusiasts in South America.
+AD357,T-Shirt,Fitness Lovers,Africa,142.63,2153,64,4,0.03,0.062,Buy T-Shirt now! Exclusive offer for Fitness Lovers in Africa.
+AD358,T-Shirt,Tech Enthusiasts,South America,100.36,2566,29,7,0.011,0.241,Buy T-Shirt now! Exclusive offer for Tech Enthusiasts in South America.
+AD359,Headphones,Professionals,Europe,171.39,522,36,3,0.069,0.083,Buy Headphones now! Exclusive offer for Professionals in Europe.
+AD360,Smartphone,Professionals,Asia,75.69,2960,151,43,0.051,0.285,Buy Smartphone now! Exclusive offer for Professionals in Asia.
+AD361,Smartwatch,Artists,Europe,289.03,6426,501,91,0.078,0.182,Buy Smartwatch now! Exclusive offer for Artists in Europe.
+AD362,T-Shirt,Travelers,Africa,471.47,6751,613,87,0.091,0.142,Buy T-Shirt now! Exclusive offer for Travelers in Africa.
+AD363,Headphones,Fitness Lovers,North America,67.7,9996,161,29,0.016,0.18,Buy Headphones now! Exclusive offer for Fitness Lovers in North America.
+AD364,Headphones,Gamers,South America,104.95,7795,212,34,0.027,0.16,Buy Headphones now! Exclusive offer for Gamers in South America.
+AD365,Laptop,Travelers,Asia,253.49,3800,335,77,0.088,0.23,Buy Laptop now! Exclusive offer for Travelers in Asia.
+AD366,Smartphone,Fitness Lovers,South America,470.24,6779,393,38,0.058,0.097,Buy Smartphone now! Exclusive offer for Fitness Lovers in South America.
+AD367,Backpack,Travelers,Africa,192.27,9053,1014,120,0.112,0.118,Buy Backpack now! Exclusive offer for Travelers in Africa.
+AD368,Laptop,Gamers,South America,278.26,7853,795,214,0.101,0.269,Buy Laptop now! Exclusive offer for Gamers in South America.
+AD369,Laptop,Students,Asia,68.71,4227,542,154,0.128,0.284,Buy Laptop now! Exclusive offer for Students in Asia.
+AD370,Camera,Students,Africa,116.75,6772,724,195,0.107,0.269,Buy Camera now! Exclusive offer for Students in Africa.
+AD371,Smartwatch,Artists,South America,493.98,6495,455,62,0.07,0.136,Buy Smartwatch now! Exclusive offer for Artists in South America.
+AD372,Headphones,Students,North America,484.3,9976,1039,247,0.104,0.238,Buy Headphones now! Exclusive offer for Students in North America.
+AD373,Smartwatch,Students,Africa,52.22,1014,49,7,0.048,0.143,Buy Smartwatch now! Exclusive offer for Students in Africa.
+AD374,Protein Powder,Parents,Africa,478.32,948,50,7,0.053,0.14,Buy Protein Powder now! Exclusive offer for Parents in Africa.
+AD375,Camera,Tech Enthusiasts,North America,337.6,6519,785,60,0.12,0.076,Buy Camera now! Exclusive offer for Tech Enthusiasts in North America.
+AD376,Backpack,Parents,Europe,440.56,5843,423,78,0.072,0.184,Buy Backpack now! Exclusive offer for Parents in Europe.
+AD377,Smartwatch,Parents,Asia,254.63,8533,1039,74,0.122,0.071,Buy Smartwatch now! Exclusive offer for Parents in Asia.
+AD378,Sneakers,Artists,Europe,282.02,3020,377,42,0.125,0.111,Buy Sneakers now! Exclusive offer for Artists in Europe.
+AD379,T-Shirt,Parents,South America,269.98,3581,465,120,0.13,0.258,Buy T-Shirt now! Exclusive offer for Parents in South America.
+AD380,Protein Powder,Students,North America,350.09,1928,266,20,0.138,0.075,Buy Protein Powder now! Exclusive offer for Students in North America.
+AD381,Smartphone,Gamers,Europe,112.84,4467,314,12,0.07,0.038,Buy Smartphone now! Exclusive offer for Gamers in Europe.
+AD382,Backpack,Artists,Africa,63.49,6945,379,14,0.055,0.037,Buy Backpack now! Exclusive offer for Artists in Africa.
+AD383,Protein Powder,Artists,South America,188.57,9614,879,249,0.091,0.283,Buy Protein Powder now! Exclusive offer for Artists in South America.
+AD384,T-Shirt,Professionals,South America,367.11,2659,164,26,0.062,0.159,Buy T-Shirt now! Exclusive offer for Professionals in South America.
+AD385,Camera,Artists,Europe,140.83,5632,530,71,0.094,0.134,Buy Camera now! Exclusive offer for Artists in Europe.
+AD386,T-Shirt,Professionals,Europe,353.04,3047,331,81,0.109,0.245,Buy T-Shirt now! Exclusive offer for Professionals in Europe.
+AD387,Laptop,Artists,North America,486.46,3479,370,93,0.106,0.251,Buy Laptop now! Exclusive offer for Artists in North America.
+AD388,T-Shirt,Tech Enthusiasts,Asia,92.26,3149,196,22,0.062,0.112,Buy T-Shirt now! Exclusive offer for Tech Enthusiasts in Asia.
+AD389,Laptop,Students,Europe,352.67,9005,300,64,0.033,0.213,Buy Laptop now! Exclusive offer for Students in Europe.
+AD390,Camera,Artists,Europe,249.69,3583,251,59,0.07,0.235,Buy Camera now! Exclusive offer for Artists in Europe.
+AD391,Sunglasses,Students,Africa,440.66,1537,46,9,0.03,0.196,Buy Sunglasses now! Exclusive offer for Students in Africa.
+AD392,Laptop,Students,South America,129.72,3989,536,33,0.134,0.062,Buy Laptop now! Exclusive offer for Students in South America.
+AD393,Smartphone,Travelers,Asia,361.68,8104,473,125,0.058,0.264,Buy Smartphone now! Exclusive offer for Travelers in Asia.
+AD394,T-Shirt,Artists,Africa,427.15,8044,254,43,0.032,0.169,Buy T-Shirt now! Exclusive offer for Artists in Africa.
+AD395,T-Shirt,Fitness Lovers,North America,475.08,3134,42,4,0.013,0.095,Buy T-Shirt now! Exclusive offer for Fitness Lovers in North America.
+AD396,Smartphone,Travelers,North America,357.46,4483,450,62,0.1,0.138,Buy Smartphone now! Exclusive offer for Travelers in North America.
+AD397,Sneakers,Fitness Lovers,Europe,273.73,2278,225,6,0.099,0.027,Buy Sneakers now! Exclusive offer for Fitness Lovers in Europe.
+AD398,Headphones,Students,Europe,328.03,8402,484,27,0.058,0.056,Buy Headphones now! Exclusive offer for Students in Europe.
+AD399,Sunglasses,Students,North America,441.01,5610,112,26,0.02,0.232,Buy Sunglasses now! Exclusive offer for Students in North America.
+AD400,Backpack,Travelers,Europe,306.77,5689,383,7,0.067,0.018,Buy Backpack now! Exclusive offer for Travelers in Europe.
+AD401,Laptop,Travelers,Asia,63.67,7878,422,57,0.054,0.135,Buy Laptop now! Exclusive offer for Travelers in Asia.
+AD402,Smartphone,Fitness Lovers,Europe,468.93,1624,170,28,0.105,0.165,Buy Smartphone now! Exclusive offer for Fitness Lovers in Europe.
+AD403,Camera,Professionals,South America,360.29,1197,113,3,0.094,0.027,Buy Camera now! Exclusive offer for Professionals in South America.
+AD404,Laptop,Fitness Lovers,Europe,354.43,2679,163,47,0.061,0.288,Buy Laptop now! Exclusive offer for Fitness Lovers in Europe.
+AD405,Headphones,Travelers,Africa,147.05,5751,232,19,0.04,0.082,Buy Headphones now! Exclusive offer for Travelers in Africa.
+AD406,Camera,Gamers,Asia,346.5,9735,1443,151,0.148,0.105,Buy Camera now! Exclusive offer for Gamers in Asia.
+AD407,Protein Powder,Travelers,Africa,227.24,2429,178,18,0.073,0.101,Buy Protein Powder now! Exclusive offer for Travelers in Africa.
+AD408,T-Shirt,Gamers,Africa,343.05,1513,160,13,0.106,0.081,Buy T-Shirt now! Exclusive offer for Gamers in Africa.
+AD409,Protein Powder,Tech Enthusiasts,South America,97.97,726,21,0,0.029,0.0,Buy Protein Powder now! Exclusive offer for Tech Enthusiasts in South America.
+AD410,Laptop,Travelers,Asia,346.03,7821,609,136,0.078,0.223,Buy Laptop now! Exclusive offer for Travelers in Asia.
+AD411,Headphones,Tech Enthusiasts,Asia,499.74,2328,32,9,0.014,0.281,Buy Headphones now! Exclusive offer for Tech Enthusiasts in Asia.
+AD412,Sunglasses,Professionals,Asia,71.7,8409,679,56,0.081,0.082,Buy Sunglasses now! Exclusive offer for Professionals in Asia.
+AD413,Laptop,Fitness Lovers,Asia,489.73,6088,882,181,0.145,0.205,Buy Laptop now! Exclusive offer for Fitness Lovers in Asia.
+AD414,Smartphone,Gamers,Asia,233.11,2523,160,36,0.063,0.225,Buy Smartphone now! Exclusive offer for Gamers in Asia.
+AD415,Smartwatch,Fitness Lovers,South America,441.84,5466,84,21,0.015,0.25,Buy Smartwatch now! Exclusive offer for Fitness Lovers in South America.
+AD416,Laptop,Tech Enthusiasts,Europe,402.07,6391,91,12,0.014,0.132,Buy Laptop now! Exclusive offer for Tech Enthusiasts in Europe.
+AD417,T-Shirt,Gamers,Africa,305.16,1580,101,10,0.064,0.099,Buy T-Shirt now! Exclusive offer for Gamers in Africa.
+AD418,T-Shirt,Fitness Lovers,Asia,382.3,5536,179,19,0.032,0.106,Buy T-Shirt now! Exclusive offer for Fitness Lovers in Asia.
+AD419,Laptop,Travelers,Europe,445.33,3063,40,8,0.013,0.2,Buy Laptop now! Exclusive offer for Travelers in Europe.
+AD420,Camera,Students,Europe,231.86,3792,439,109,0.116,0.248,Buy Camera now! Exclusive offer for Students in Europe.
+AD421,Smartwatch,Tech Enthusiasts,Africa,197.16,4086,303,21,0.074,0.069,Buy Smartwatch now! Exclusive offer for Tech Enthusiasts in Africa.
+AD422,Smartphone,Fitness Lovers,South America,350.42,4931,248,30,0.05,0.121,Buy Smartphone now! Exclusive offer for Fitness Lovers in South America.
+AD423,Laptop,Tech Enthusiasts,North America,413.53,7341,998,271,0.136,0.272,Buy Laptop now! Exclusive offer for Tech Enthusiasts in North America.
+AD424,Camera,Parents,North America,393.03,7143,187,45,0.026,0.241,Buy Camera now! Exclusive offer for Parents in North America.
+AD425,T-Shirt,Tech Enthusiasts,Europe,409.02,4459,641,189,0.144,0.295,Buy T-Shirt now! Exclusive offer for Tech Enthusiasts in Europe.
+AD426,T-Shirt,Gamers,Africa,246.01,661,35,8,0.053,0.229,Buy T-Shirt now! Exclusive offer for Gamers in Africa.
+AD427,Headphones,Parents,North America,418.03,1093,146,18,0.134,0.123,Buy Headphones now! Exclusive offer for Parents in North America.
+AD428,Laptop,Artists,Europe,104.09,3890,367,68,0.094,0.185,Buy Laptop now! Exclusive offer for Artists in Europe.
+AD429,Smartwatch,Gamers,South America,295.02,6497,816,167,0.126,0.205,Buy Smartwatch now! Exclusive offer for Gamers in South America.
+AD430,Sneakers,Students,North America,52.59,6854,1012,42,0.148,0.042,Buy Sneakers now! Exclusive offer for Students in North America.
+AD431,Smartwatch,Parents,Europe,196.06,1163,58,10,0.05,0.172,Buy Smartwatch now! Exclusive offer for Parents in Europe.
+AD432,T-Shirt,Artists,Europe,214.91,9824,1420,310,0.145,0.218,Buy T-Shirt now! Exclusive offer for Artists in Europe.
+AD433,T-Shirt,Travelers,Asia,228.28,1041,67,4,0.064,0.06,Buy T-Shirt now! Exclusive offer for Travelers in Asia.
+AD434,Protein Powder,Tech Enthusiasts,South America,362.96,5933,379,90,0.064,0.237,Buy Protein Powder now! Exclusive offer for Tech Enthusiasts in South America.
+AD435,T-Shirt,Fitness Lovers,Asia,224.85,5593,322,59,0.058,0.183,Buy T-Shirt now! Exclusive offer for Fitness Lovers in Asia.
+AD436,Smartphone,Professionals,Africa,251.91,1367,117,33,0.086,0.282,Buy Smartphone now! Exclusive offer for Professionals in Africa.
+AD437,Backpack,Tech Enthusiasts,Asia,156.89,9123,288,9,0.032,0.031,Buy Backpack now! Exclusive offer for Tech Enthusiasts in Asia.
+AD438,Laptop,Artists,Asia,217.96,5969,522,49,0.087,0.094,Buy Laptop now! Exclusive offer for Artists in Asia.
+AD439,Smartwatch,Tech Enthusiasts,North America,152.27,6756,579,109,0.086,0.188,Buy Smartwatch now! Exclusive offer for Tech Enthusiasts in North America.
+AD440,Backpack,Students,Europe,82.94,9898,1154,118,0.117,0.102,Buy Backpack now! Exclusive offer for Students in Europe.
+AD441,Camera,Travelers,South America,321.55,1669,211,46,0.126,0.218,Buy Camera now! Exclusive offer for Travelers in South America.
+AD442,Sneakers,Professionals,Asia,350.7,1330,95,22,0.071,0.232,Buy Sneakers now! Exclusive offer for Professionals in Asia.
+AD443,Smartphone,Parents,South America,328.77,2151,112,5,0.052,0.045,Buy Smartphone now! Exclusive offer for Parents in South America.
+AD444,Smartwatch,Parents,Asia,258.57,1636,75,12,0.046,0.16,Buy Smartwatch now! Exclusive offer for Parents in Asia.
+AD445,Backpack,Parents,Africa,220.9,3310,123,19,0.037,0.154,Buy Backpack now! Exclusive offer for Parents in Africa.
+AD446,Sneakers,Artists,Asia,438.5,9167,165,20,0.018,0.121,Buy Sneakers now! Exclusive offer for Artists in Asia.
+AD447,Protein Powder,Gamers,North America,283.59,1519,88,24,0.058,0.273,Buy Protein Powder now! Exclusive offer for Gamers in North America.
+AD448,Smartphone,Gamers,Europe,265.63,5737,274,68,0.048,0.248,Buy Smartphone now! Exclusive offer for Gamers in Europe.
+AD449,Smartphone,Fitness Lovers,Africa,61.54,1783,259,55,0.145,0.212,Buy Smartphone now! Exclusive offer for Fitness Lovers in Africa.
+AD450,Protein Powder,Professionals,Asia,203.56,1159,102,22,0.088,0.216,Buy Protein Powder now! Exclusive offer for Professionals in Asia.
+AD451,Laptop,Parents,South America,221.09,2510,147,21,0.059,0.143,Buy Laptop now! Exclusive offer for Parents in South America.
+AD452,Protein Powder,Gamers,Africa,229.47,9090,829,230,0.091,0.277,Buy Protein Powder now! Exclusive offer for Gamers in Africa.
+AD453,Smartphone,Artists,Africa,311.08,2233,65,13,0.029,0.2,Buy Smartphone now! Exclusive offer for Artists in Africa.
+AD454,Smartphone,Fitness Lovers,Asia,290.12,2625,189,42,0.072,0.222,Buy Smartphone now! Exclusive offer for Fitness Lovers in Asia.
+AD455,Backpack,Travelers,Africa,323.56,2671,260,67,0.097,0.258,Buy Backpack now! Exclusive offer for Travelers in Africa.
+AD456,T-Shirt,Fitness Lovers,South America,394.2,8766,687,66,0.078,0.096,Buy T-Shirt now! Exclusive offer for Fitness Lovers in South America.
+AD457,Sneakers,Gamers,Africa,415.84,3971,263,64,0.066,0.243,Buy Sneakers now! Exclusive offer for Gamers in Africa.
+AD458,Protein Powder,Students,South America,373.16,9528,1420,106,0.149,0.075,Buy Protein Powder now! Exclusive offer for Students in South America.
+AD459,Sneakers,Artists,Asia,479.99,6124,815,95,0.133,0.117,Buy Sneakers now! Exclusive offer for Artists in Asia.
+AD460,Protein Powder,Students,Europe,58.2,9191,894,101,0.097,0.113,Buy Protein Powder now! Exclusive offer for Students in Europe.
+AD461,Camera,Parents,Africa,138.1,8829,792,232,0.09,0.293,Buy Camera now! Exclusive offer for Parents in Africa.
+AD462,Smartphone,Students,Europe,53.4,2597,251,65,0.097,0.259,Buy Smartphone now! Exclusive offer for Students in Europe.
+AD463,T-Shirt,Parents,South America,341.36,5568,212,45,0.038,0.212,Buy T-Shirt now! Exclusive offer for Parents in South America.
+AD464,Backpack,Parents,Africa,454.11,6897,450,100,0.065,0.222,Buy Backpack now! Exclusive offer for Parents in Africa.
+AD465,T-Shirt,Gamers,North America,159.57,3257,50,8,0.015,0.16,Buy T-Shirt now! Exclusive offer for Gamers in North America.
+AD466,T-Shirt,Students,Europe,467.17,4420,338,96,0.076,0.284,Buy T-Shirt now! Exclusive offer for Students in Europe.
+AD467,T-Shirt,Parents,Africa,77.12,8686,747,118,0.086,0.158,Buy T-Shirt now! Exclusive offer for Parents in Africa.
+AD468,Sneakers,Professionals,Europe,470.5,2400,100,12,0.042,0.12,Buy Sneakers now! Exclusive offer for Professionals in Europe.
+AD469,Protein Powder,Travelers,Africa,208.23,3110,450,29,0.145,0.064,Buy Protein Powder now! Exclusive offer for Travelers in Africa.
+AD470,Sunglasses,Fitness Lovers,Asia,95.64,7400,1016,243,0.137,0.239,Buy Sunglasses now! Exclusive offer for Fitness Lovers in Asia.
+AD471,Camera,Fitness Lovers,Europe,268.64,1949,216,48,0.111,0.222,Buy Camera now! Exclusive offer for Fitness Lovers in Europe.
+AD472,Smartwatch,Gamers,North America,165.55,9238,782,99,0.085,0.127,Buy Smartwatch now! Exclusive offer for Gamers in North America.
+AD473,T-Shirt,Students,North America,178.19,5517,727,19,0.132,0.026,Buy T-Shirt now! Exclusive offer for Students in North America.
+AD474,Laptop,Students,South America,188.28,8499,240,61,0.028,0.254,Buy Laptop now! Exclusive offer for Students in South America.
+AD475,Sneakers,Parents,Africa,411.36,6552,790,18,0.121,0.023,Buy Sneakers now! Exclusive offer for Parents in Africa.
+AD476,Backpack,Artists,Europe,292.62,2596,71,15,0.027,0.211,Buy Backpack now! Exclusive offer for Artists in Europe.
+AD477,Smartwatch,Tech Enthusiasts,South America,190.09,9395,1138,331,0.121,0.291,Buy Smartwatch now! Exclusive offer for Tech Enthusiasts in South America.
+AD478,Sunglasses,Parents,Europe,324.65,6904,335,47,0.049,0.14,Buy Sunglasses now! Exclusive offer for Parents in Europe.
+AD479,Laptop,Travelers,Africa,372.27,3831,508,43,0.133,0.085,Buy Laptop now! Exclusive offer for Travelers in Africa.
+AD480,Sunglasses,Professionals,North America,172.68,7962,1131,245,0.142,0.217,Buy Sunglasses now! Exclusive offer for Professionals in North America.
+AD481,Smartwatch,Fitness Lovers,Asia,236.1,5605,172,42,0.031,0.244,Buy Smartwatch now! Exclusive offer for Fitness Lovers in Asia.
+AD482,T-Shirt,Parents,North America,104.85,3478,260,44,0.075,0.169,Buy T-Shirt now! Exclusive offer for Parents in North America.
+AD483,Laptop,Tech Enthusiasts,South America,131.52,3339,491,142,0.147,0.289,Buy Laptop now! Exclusive offer for Tech Enthusiasts in South America.
+AD484,Sunglasses,Tech Enthusiasts,Asia,356.5,3884,301,10,0.077,0.033,Buy Sunglasses now! Exclusive offer for Tech Enthusiasts in Asia.
+AD485,Backpack,Parents,South America,131.65,1185,155,25,0.131,0.161,Buy Backpack now! Exclusive offer for Parents in South America.
+AD486,Protein Powder,Gamers,Africa,286.32,8031,742,164,0.092,0.221,Buy Protein Powder now! Exclusive offer for Gamers in Africa.
+AD487,Smartphone,Fitness Lovers,Asia,369.07,4783,299,78,0.063,0.261,Buy Smartphone now! Exclusive offer for Fitness Lovers in Asia.
+AD488,Protein Powder,Gamers,South America,98.09,8236,411,28,0.05,0.068,Buy Protein Powder now! Exclusive offer for Gamers in South America.
+AD489,Smartwatch,Professionals,Africa,305.29,8210,315,76,0.038,0.241,Buy Smartwatch now! Exclusive offer for Professionals in Africa.
+AD490,Sneakers,Tech Enthusiasts,North America,165.45,2119,247,43,0.117,0.174,Buy Sneakers now! Exclusive offer for Tech Enthusiasts in North America.
+AD491,Smartphone,Tech Enthusiasts,Africa,483.32,7368,472,61,0.064,0.129,Buy Smartphone now! Exclusive offer for Tech Enthusiasts in Africa.
+AD492,Camera,Travelers,Europe,267.6,1931,157,8,0.081,0.051,Buy Camera now! Exclusive offer for Travelers in Europe.
+AD493,Backpack,Professionals,Africa,412.7,9567,755,198,0.079,0.262,Buy Backpack now! Exclusive offer for Professionals in Africa.
+AD494,Camera,Tech Enthusiasts,Africa,297.6,5213,473,30,0.091,0.063,Buy Camera now! Exclusive offer for Tech Enthusiasts in Africa.
+AD495,Laptop,Professionals,Europe,69.54,9935,1303,139,0.131,0.107,Buy Laptop now! Exclusive offer for Professionals in Europe.
+AD496,Smartphone,Fitness Lovers,South America,334.92,5498,809,81,0.147,0.1,Buy Smartphone now! Exclusive offer for Fitness Lovers in South America.
+AD497,Camera,Students,South America,478.13,662,44,11,0.066,0.25,Buy Camera now! Exclusive offer for Students in South America.
+AD498,Camera,Tech Enthusiasts,Africa,320.73,2474,311,64,0.126,0.206,Buy Camera now! Exclusive offer for Tech Enthusiasts in Africa.
+AD499,Sunglasses,Travelers,Europe,418.63,3791,443,107,0.117,0.242,Buy Sunglasses now! Exclusive offer for Travelers in Europe.
+AD500,Protein Powder,Fitness Lovers,Europe,447.89,8961,809,72,0.09,0.089,Buy Protein Powder now! Exclusive offer for Fitness Lovers in Europe.
