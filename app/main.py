@@ -1,56 +1,36 @@
-# app/main.py
-import sys
-import os
+
+# AdPerformanceOptimizer -  PyQt5 
+
+import sys, os
 import pandas as pd
 import numpy as np
 from PyQt5.QtWidgets import (
     QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
-    QPushButton, QFileDialog, QMessageBox, QTableWidget, QTableWidgetItem
+    QPushButton, QFileDialog, QMessageBox, QTableWidget, QTableWidgetItem,
+    QInputDialog
 )
 from PyQt5.QtCore import Qt
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 
-# Try to import the single ML/RL module (ad_optimizer). If it fails, we'll show an error when used.
-try:
-    from app.models.ML.ad_optimizer import (
-        optimize_ads,
-        optimize_budget,
-        predict_ctr_and_conversions,
-        feature_importance,
-        generate_insights,
-        what_if_simulation
-    )
-    AD_OPTIMIZER_AVAILABLE = True
-except Exception:
-    # We'll handle this later without crashing the module import.
-    AD_OPTIMIZER_AVAILABLE = False
 
-# -------------------------------
-# Utilities: column normalization / validation
-# -------------------------------
 
+
+# ML & RL imports
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.preprocessing import LabelEncoder
+from sklearn.inspection import permutation_importance
+from stable_baselines3 import PPO
+from stable_baselines3.common.vec_env import DummyVecEnv
+import gym
+import shimmy  # required for gym + SB3 compatibility
+
+
+
+# Utilities: Column normalization / numeric coercion
 def normalize_columns(df: pd.DataFrame) -> pd.DataFrame:
-    """
-    Normalize common column name variants to the canonical names used throughout the app.
-    Canonical names:
-      - 'Ad_ID' (internal canonical for ad id)
-      - 'Product'
-      - 'Audience'
-      - 'Region'
-      - 'Budget' (float)
-      - 'Impressions'
-      - 'Clicks'
-      - 'Conversions'
-      - 'CTR'
-      - 'ROI'
-      - 'Ad_Description'
-    This modifies a copy and returns it.
-    """
     df = df.copy()
     col_map = {}
-
-    # map common variants to canonical
     for c in df.columns:
         cn = c.strip()
         low = cn.lower()
@@ -76,46 +56,85 @@ def normalize_columns(df: pd.DataFrame) -> pd.DataFrame:
             col_map[c] = "Audience"
         elif low in ("region", "country"):
             col_map[c] = "Region"
-        else:
-            # leave other columns unchanged
-            pass
-
-    if col_map:
-        df = df.rename(columns=col_map)
-
-    # Ensure canonical Ad_ID exists; if not, create from index
+    if col_map: df = df.rename(columns=col_map)
     if "Ad_ID" not in df.columns:
-        df.insert(0, "Ad_ID", [f"ROW_{i+1}" for i in range(len(df))])
-
-    # Ensure numeric columns are properly typed (where present)
+        df.insert(0, "Ad_ID", [f"ROW_{i + 1}" for i in range(len(df))])
+    # Numeric columns coercion (safe)
     for numeric_col in ["Budget", "Impressions", "Clicks", "Conversions", "CTR", "ROI"]:
         if numeric_col in df.columns:
-            # coerce to numeric; invalid parse becomes NaN
-            df[numeric_col] = pd.to_numeric(df[numeric_col], errors="coerce")
-
+            df[numeric_col] = pd.to_numeric(
+                df[numeric_col].astype(str).str.replace(r'[^\d.]', '', regex=True),
+                errors="coerce"
+            )
     return df
 
-# -------------------------------
-# Placeholder / fallback functions (kept so UI works even if ML module missing)
-# -------------------------------
-def predict_ctr_fallback(df):
-    """Return dummy predicted CTR (fallback)."""
-    return np.round(np.random.uniform(0.01, 0.15, size=len(df)), 3)
 
-def predict_conversion_fallback(df):
-    """Return dummy predicted conversions (fallback)."""
-    return np.random.randint(5, 300, size=len(df))
 
+# ML Prediction Fallback (CTR / Conversions)
+def predict_ctr_and_conversions(df: pd.DataFrame):
+    df = df.copy()
+    np.random.seed(42)
+    df['Predicted_CTR'] = np.round(np.random.uniform(0.01, 0.15, size=len(df)), 3)
+    df['Predicted_Conversions'] = np.random.randint(5, 300, size=len(df))
+    return df
+
+
+
+# XAI: Feature Importance
+def compute_feature_importance(df):
+    df = df.copy()
+    le_cols = [c for c in df.columns if df[c].dtype == object]
+    df_enc = df.copy()
+    for c in le_cols:
+        df_enc[c] = LabelEncoder().fit_transform(df[c])
+
+
+    
+    # Use available numeric columns
+    numeric_features = []
+    for col in ['Budget', 'Optimized_Budget', 'Impressions', 'Clicks']:
+        if col in df_enc.columns:
+            numeric_features.append(col)
+    if not numeric_features:
+        raise ValueError("No numeric features available for feature importance.")
+
+    X = df_enc[numeric_features]
+    y = df_enc['Predicted_CTR'] if 'Predicted_CTR' in df_enc.columns else np.random.rand(len(df_enc))
+
+    model = RandomForestRegressor(n_estimators=50)
+    model.fit(X, y)
+
+    imp = permutation_importance(model, X, y, n_repeats=5, random_state=42)
+    importance_df = pd.DataFrame({
+        'Feature': X.columns,
+        'Importance': imp.importances_mean
+    }).sort_values(by='Importance', ascending=False)
+    return importance_df
+
+
+
+# NLP Sentiment Analysis (Fallback)
 def analyze_text_fallback(df):
-    """Return dummy NLP analysis (fallback)."""
     sentiments = ['Positive', 'Neutral', 'Negative']
     return np.random.choice(sentiments, size=len(df))
 
-# -------------------------------
-# Scenario Simulation (keeps as-is but normalized)
-# -------------------------------
+def suggest_ad_copy(df):
+    suggestions = []
+    for _, row in df.iterrows():
+        sentiment = row.get('Ad_Sentiment', 'Neutral')
+        if sentiment == 'Negative':
+            suggestions.append("Consider rewording headline for positivity")
+        else:
+            suggestions.append("CTA looks good")
+    df['Ad_Copy_Suggestion'] = suggestions
+    return df
+
+
+
+
+# Scenario / What-If Simulation
+
 def scenario_simulation(df, budget_increase=0.1):
-    """Dummy scenario simulation: increase budget by x%"""
     new_df = df.copy()
     if 'Budget' in df.columns and pd.notnull(new_df['Budget']).any():
         new_df['Optimized_Budget'] = new_df['Budget'] * (1 + budget_increase)
@@ -123,9 +142,68 @@ def scenario_simulation(df, budget_increase=0.1):
         new_df['Optimized_Budget'] = np.round(np.random.uniform(100, 200, size=len(df)), 2)
     return new_df
 
-# -------------------------------
-# Dashboard (Charts)
-# -------------------------------
+
+
+# Automated Insights
+def generate_insights(df):
+    insights = []
+    if 'Predicted_CTR' in df.columns:
+        low_ctr = df[df['Predicted_CTR'] < 0.05]
+        for _, r in low_ctr.iterrows():
+            insights.append(f"Ad {r['Ad_ID']} has low CTR ({r['Predicted_CTR']:.2f})")
+    if 'Predicted_Conversions' in df.columns:
+        low_conv = df[df['Predicted_Conversions'] < 20]
+        for _, r in low_conv.iterrows():
+            insights.append(f"Ad {r['Ad_ID']} has low predicted conversions ({r['Predicted_Conversions']})")
+    return insights
+
+
+
+# RL Environment for Budget Optimization
+class AdBudgetEnv(gym.Env):
+    metadata = {'render.modes': ['human']}
+
+    def __init__(self, df, metric='CTR'):
+        super().__init__()
+        self.df = df.copy()
+        self.n_ads = len(df)
+        self.metric = metric
+        self.action_space = gym.spaces.Box(low=0, high=1, shape=(self.n_ads,), dtype=np.float32)
+        self.observation_space = gym.spaces.Box(low=0, high=np.inf, shape=(self.n_ads * 3,), dtype=np.float32)
+        self.state = self._get_state()
+
+    def _get_state(self):
+        b = self.df['Budget'].values if 'Budget' in self.df.columns else np.ones(self.n_ads) * 100
+        c = self.df['Predicted_Conversions'].values if 'Predicted_Conversions' in self.df.columns else np.ones(
+            self.n_ads)
+        ctr = self.df['Predicted_CTR'].values if 'Predicted_CTR' in self.df.columns else np.ones(self.n_ads) * 0.05
+        return np.concatenate([b, c, ctr])
+
+    def reset(self):
+        self.state = self._get_state()
+        return self.state
+
+    def step(self, action):
+        action = np.array(action)
+        action = action / (action.sum() + 1e-6)
+        total_budget = self.df['Budget'].sum() if 'Budget' in self.df.columns else self.n_ads * 100
+        allocated = action * total_budget
+        conv = self.df['Predicted_Conversions'].values
+        ctr = self.df['Predicted_CTR'].values
+        if self.metric == "CTR":
+            reward = np.sum((allocated / total_budget) * ctr)
+        elif self.metric == "Conversions":
+            reward = np.sum((allocated / total_budget) * conv)
+        else:  # minimize cost
+            reward = -np.sum(allocated)
+        done = True
+        info = {}
+        self.state = np.concatenate([allocated, conv, ctr])
+        return self.state, reward, done, info
+
+
+
+# Dashboard / Plots
 class DashboardView(QWidget):
     def __init__(self, parent=None):
         super().__init__(parent)
@@ -147,12 +225,10 @@ class DashboardView(QWidget):
                 self.ax.set_xlabel("Product")
                 self.ax.tick_params(axis='x', labelrotation=45)
                 self.canvas.figure.tight_layout()
-
-
             except Exception as e:
                 self.ax.text(0.5, 0.5, f"Unable to plot CTR: {e}", ha='center')
         else:
-            self.ax.text(0.5, 0.5, "No CTR data to plot", ha='center')
+            self.ax.text(0.5, 0.5, "No CTR data", ha='center')
         self.canvas.draw()
 
     def plot_conversion_vs_region(self, df):
@@ -168,25 +244,14 @@ class DashboardView(QWidget):
             except Exception as e:
                 self.ax.text(0.5, 0.5, f"Unable to plot Conversions: {e}", ha='center')
         else:
-            self.ax.text(0.5, 0.5, "No Conversions data to plot", ha='center')
+            self.ax.text(0.5, 0.5, "No Conversions data", ha='center')
         self.canvas.draw()
 
     def plot_budget_allocation(self, df):
         self.ax.clear()
-        # prefer Optimized_Budget, else Budget; fall back to index if x not available
         if 'Optimized_Budget' in df.columns or 'Budget' in df.columns:
             y_col = 'Optimized_Budget' if 'Optimized_Budget' in df.columns else 'Budget'
-            # Determine x column
-            if 'Ad_ID' in df.columns:
-                x_col = 'Ad_ID'
-                plot_df = df.set_index('Ad_ID')
-            elif 'Ad ID' in df.columns:
-                x_col = 'Ad ID'
-                plot_df = df.set_index('Ad ID')
-            else:
-                # fallback to index
-                plot_df = df.copy()
-                plot_df.index = [str(i+1) for i in range(len(plot_df))]
+            plot_df = df.set_index('Ad_ID') if 'Ad_ID' in df.columns else df.copy()
             try:
                 plot_df[y_col].plot(kind='bar', ax=self.ax)
                 self.ax.set_title("Budget Allocation per Ad")
@@ -195,29 +260,30 @@ class DashboardView(QWidget):
             except Exception as e:
                 self.ax.text(0.5, 0.5, f"Unable to plot Budget: {e}", ha='center')
         else:
-            self.ax.text(0.5, 0.5, "No Budget data to plot", ha='center')
+            self.ax.text(0.5, 0.5, "No Budget data", ha='center')
         self.canvas.draw()
 
-# -------------------------------
-# Main Window
-# -------------------------------
+
+
+
+# Main PyQt5 Window
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("AI Ad Performance Optimizer")
         self.setGeometry(100, 100, 1200, 800)
-
-        # central layout
         self.central_widget = QWidget()
         self.setCentralWidget(self.central_widget)
         self.layout = QVBoxLayout()
         self.central_widget.setLayout(self.layout)
 
-        # buttons
+
+        
+        # Buttons
         btn_layout = QHBoxLayout()
-        self.load_btn = QPushButton("Load CSV Data")
+        self.load_btn = QPushButton("Load CSV")
         self.load_btn.clicked.connect(self.load_data)
-        self.predict_btn = QPushButton("Predict CTR/Conversion")
+        self.predict_btn = QPushButton("Predict CTR/Conversions")
         self.predict_btn.clicked.connect(self.run_predictions)
         self.optimize_btn = QPushButton("Optimize Budget (RL)")
         self.optimize_btn.clicked.connect(self.run_optimization)
@@ -225,56 +291,52 @@ class MainWindow(QMainWindow):
         self.nlp_btn.clicked.connect(self.run_text_analysis)
         self.simulate_btn = QPushButton("Scenario Simulation")
         self.simulate_btn.clicked.connect(self.run_simulation)
+        self.xai_btn = QPushButton("XAI Feature Importance")
+        self.xai_btn.clicked.connect(self.show_feature_importance)
         self.export_btn = QPushButton("Export Report")
         self.export_btn.clicked.connect(self.export_report)
 
-        for b in (self.load_btn, self.predict_btn, self.optimize_btn,
-                  self.nlp_btn, self.simulate_btn, self.export_btn):
+        for b in [self.load_btn, self.predict_btn, self.optimize_btn, self.nlp_btn, self.simulate_btn, self.xai_btn,
+                  self.export_btn]:
             btn_layout.addWidget(b)
         self.layout.addLayout(btn_layout)
 
-        # table
+
+        
+        # Table
         self.table = QTableWidget()
         self.layout.addWidget(self.table)
 
-        # dashboard
+
+        # Dashboard
         self.dashboard = DashboardView()
         self.layout.addWidget(self.dashboard)
 
-        # data storage
+        
+        # Data storage
         self.ads_df = None
+        self.optimization_metric = "CTR"
 
-    # -------------------------------
+    
+    
     # Data Handling
-    # -------------------------------
+    
     def load_data(self):
         file_path, _ = QFileDialog.getOpenFileName(self, "Open CSV", "", "CSV Files (*.csv);;All Files (*)")
-        if not file_path:
-            return
+        if not file_path: return
         try:
             df = pd.read_csv(file_path)
             df = normalize_columns(df)
             self.ads_df = df
             self.display_table()
             QMessageBox.information(self, "Success", f"Data loaded from {file_path}")
-
-            # Automatically run predictions and optimization after upload
-            # Use ML module if available, else use fallback
-            try:
-                self.run_predictions()
-                self.run_optimization()
-            except Exception as e:
-                # don't block load on optimization issues
-                QMessageBox.warning(self, "Warning", f"Loaded data but optimization failed: {e}")
-
+            self.run_predictions()
         except Exception as e:
-            QMessageBox.critical(self, "Error", f"Failed to load CSV:\n{str(e)}")
+            QMessageBox.critical(self, "Error", f"Failed to load CSV:\n{e}")
 
     def display_table(self):
-        if self.ads_df is None:
-            return
+        if self.ads_df is None: return
         df = self.ads_df
-        # Convert columns to strings for display
         cols = list(df.columns)
         self.table.setColumnCount(len(cols))
         self.table.setHorizontalHeaderLabels(cols)
@@ -282,34 +344,26 @@ class MainWindow(QMainWindow):
         for i, row in df.iterrows():
             for j, col in enumerate(cols):
                 val = row[col]
-                # Format floats reasonably
-                if isinstance(val, float):
-                    display = f"{val:.4f}"
-                else:
-                    display = str(val)
+                display = f"{val:.4f}" if isinstance(val, float) else str(val)
                 self.table.setItem(i, j, QTableWidgetItem(display))
         self.table.resizeColumnsToContents()
 
-    # -------------------------------
-    # ML / RL / NLP Integration
-    # -------------------------------
+
+    
+    
+    # ML / RL / NLP
+    
     def run_predictions(self):
         if self.ads_df is None:
             QMessageBox.warning(self, "No Data", "Load CSV first!")
             return
-
         try:
-            # Use ad_optimizer's prediction if available
-            if AD_OPTIMIZER_AVAILABLE:
-                # keep canonical columns and call ML prediction
-                self.ads_df = predict_ctr_and_conversions(self.ads_df)
-            else:
-                # fallback: use random dummy predictions
-                self.ads_df['Predicted_CTR'] = predict_ctr_fallback(self.ads_df)
-                self.ads_df['Predicted_Conversions'] = predict_conversion_fallback(self.ads_df)
-
+            self.ads_df = predict_ctr_and_conversions(self.ads_df)
             self.display_table()
             self.dashboard.plot_ctr_vs_product(self.ads_df)
+            insights = generate_insights(self.ads_df)
+            if insights:
+                QMessageBox.information(self, "Insights", "\n".join(insights))
             QMessageBox.information(self, "Prediction Done", "CTR and Conversion predictions added.")
         except Exception as e:
             QMessageBox.critical(self, "Error", f"Prediction failed:\n{e}")
@@ -318,49 +372,42 @@ class MainWindow(QMainWindow):
         if self.ads_df is None:
             QMessageBox.warning(self, "No Data", "Load CSV first!")
             return
-
         try:
-            # Ensure predictions exist
             if 'Predicted_CTR' not in self.ads_df.columns or 'Predicted_Conversions' not in self.ads_df.columns:
                 self.run_predictions()
 
-            # Use ad_optimizer's optimize_budget if available
-            if AD_OPTIMIZER_AVAILABLE:
-                # run full pipeline or only budget allocation depending on your ad_optimizer implementation
-                # Here we first ensure ML predictions are present, then call optimize_budget
-                # If optimize_ads exists and you want one-call pipeline: use optimize_ads(self.ads_df)
-                self.ads_df = optimize_budget(self.ads_df)  # uses df['Predicted_Conversions'] internally
-            else:
-                # fallback dummy optimization: proportional to predicted conversions
-                total_budget = self.ads_df['Budget'].sum() if 'Budget' in self.ads_df.columns else None
-                if total_budget is None or np.isnan(total_budget):
-                    total_budget = float(len(self.ads_df) * 100.0)
-                conv_sum = self.ads_df['Predicted_Conversions'].sum()
-                if conv_sum == 0:
-                    weights = np.ones(len(self.ads_df)) / len(self.ads_df)
-                else:
-                    weights = self.ads_df['Predicted_Conversions'] / conv_sum
-                self.ads_df['Optimized_Budget'] = (weights * total_budget).round(2)
+            # Metric selection
+            metric, ok = QInputDialog.getItem(self, "Select Optimization Metric",
+                                              "Choose metric to maximize:",
+                                              ["CTR", "Conversions", "Cost"], 0, False)
+            if ok: self.optimization_metric = metric
 
-            # Update UI
+
+            
+            # RL Optimization
+            env = DummyVecEnv([lambda: AdBudgetEnv(self.ads_df, self.optimization_metric)])
+            model = PPO("MlpPolicy", env, verbose=0)
+            model.learn(total_timesteps=200)
+            obs = env.reset()
+            action, _ = model.predict(obs)
+            action = action / (action.sum() + 1e-6)
+            total_budget = self.ads_df['Budget'].sum() if 'Budget' in self.ads_df.columns else len(self.ads_df) * 100
+            self.ads_df['Optimized_Budget'] = (action.flatten() * total_budget).round(2)
             self.display_table()
             self.dashboard.plot_budget_allocation(self.ads_df)
-            QMessageBox.information(self, "Optimization Done", "Budget optimization completed.")
+            QMessageBox.information(self, "Optimization Done", "RL budget optimization completed.")
         except Exception as e:
-            QMessageBox.critical(self, "Error", f"RL Budget Optimization failed:\n{e}")
+            QMessageBox.critical(self, "Error", f"RL Optimization failed:\n{e}")
 
     def run_text_analysis(self):
         if self.ads_df is None:
             QMessageBox.warning(self, "No Data", "Load CSV first!")
             return
         try:
-            if AD_OPTIMIZER_AVAILABLE:
-                # ad_optimizer doesn't currently implement a text sentiment function; use fallback
-                self.ads_df['Ad_Sentiment'] = analyze_text_fallback(self.ads_df)
-            else:
-                self.ads_df['Ad_Sentiment'] = analyze_text_fallback(self.ads_df)
+            self.ads_df['Ad_Sentiment'] = analyze_text_fallback(self.ads_df)
+            self.ads_df = suggest_ad_copy(self.ads_df)
             self.display_table()
-            QMessageBox.information(self, "NLP Analysis Done", "Ad text analysis completed.")
+            QMessageBox.information(self, "NLP Done", "Ad text sentiment & ad copy recommendations added.")
         except Exception as e:
             QMessageBox.critical(self, "Error", f"Text analysis failed:\n{e}")
 
@@ -368,47 +415,44 @@ class MainWindow(QMainWindow):
         if self.ads_df is None:
             QMessageBox.warning(self, "No Data", "Load CSV first!")
             return
-
         try:
-            # Run local scenario simulation then re-run optimization to see new budgets
-            self.ads_df = scenario_simulation(self.ads_df, budget_increase=0.1)
-
-            # Optionally re-run budget optimization after simulation
-            if AD_OPTIMIZER_AVAILABLE:
-                self.ads_df = optimize_budget(self.ads_df)
-            else:
-                # fallback proportional redistribution (same as in run_optimization)
-                total_budget = self.ads_df['Optimized_Budget'].sum() if 'Optimized_Budget' in self.ads_df.columns else \
-                               (self.ads_df['Budget'].sum() if 'Budget' in self.ads_df.columns else len(self.ads_df)*100)
-                conv_sum = self.ads_df['Predicted_Conversions'].sum() if 'Predicted_Conversions' in self.ads_df.columns else 1
-                if conv_sum == 0:
-                    weights = np.ones(len(self.ads_df)) / len(self.ads_df)
-                else:
-                    weights = self.ads_df['Predicted_Conversions'] / conv_sum
-                self.ads_df['Optimized_Budget'] = (weights * total_budget).round(2)
-
+            # Ask user for budget increase %
+            val, ok = QInputDialog.getDouble(self, "Scenario Simulation",
+                                             "Budget increase factor (e.g., 0.1=10%):",
+                                             0.1, -1, 10, 2)
+            if ok:
+                self.ads_df = scenario_simulation(self.ads_df, budget_increase=val)
+            self.run_optimization()
             self.display_table()
             self.dashboard.plot_budget_allocation(self.ads_df)
             QMessageBox.information(self, "Simulation Done", "Scenario simulation completed.")
         except Exception as e:
             QMessageBox.critical(self, "Error", f"Simulation failed:\n{e}")
 
-    # -------------------------------
-    # Export Report
-    # -------------------------------
+    def show_feature_importance(self):
+        if self.ads_df is None:
+            QMessageBox.warning(self, "No Data", "Load CSV first!")
+            return
+        try:
+            imp_df = compute_feature_importance(self.ads_df)
+            msg = "\n".join([f"{f}: {v:.4f}" for f, v in zip(imp_df['Feature'], imp_df['Importance'])])
+            QMessageBox.information(self, "Feature Importance (XAI)", msg)
+        except Exception as e:
+            QMessageBox.critical(self, "Error", f"XAI feature importance failed:\n{e}")
+
+
+    
+    # Export
+    
     def export_report(self):
         if self.ads_df is None:
             QMessageBox.warning(self, "No Data", "Load CSV first!")
             return
-        options = QFileDialog.Options()
-        file_path, _ = QFileDialog.getSaveFileName(
-            self, "Save Report", "", "CSV Files (*.csv);;Excel Files (*.xlsx)", options=options
-        )
-        if not file_path:
-            return
+
+        file_path, _ = QFileDialog.getSaveFileName(self, "Save Report", "", "CSV Files (*.csv);;Excel Files (*.xlsx)")
+        if not file_path: return
         try:
             out_df = self.ads_df.copy()
-            # ensure column names are user-friendly on export
             if 'Ad_ID' in out_df.columns and 'Ad ID' not in out_df.columns:
                 out_df = out_df.rename(columns={'Ad_ID': 'Ad ID'})
             if file_path.endswith(".csv"):
@@ -417,15 +461,14 @@ class MainWindow(QMainWindow):
                 out_df.to_excel(file_path, index=False)
             QMessageBox.information(self, "Success", f"Report saved at {file_path}")
         except Exception as e:
-            QMessageBox.critical(self, "Error", f"Failed to save report:\n{str(e)}")
+            QMessageBox.critical(self, "Error", f"Failed to save report:\n{e}")
 
 
-# -------------------------------
-# Run Application
-# -------------------------------
+
+# Run App
+
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     window = MainWindow()
     window.show()
-    sys.exit(app.exec_())
-
+    sys.exit(app.exec_());
