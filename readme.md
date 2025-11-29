@@ -102,30 +102,31 @@ python app/main.py
 
 ---
 
-Problem Statement & Motivation
+## **Problem Statement & Motivation**
 
-Running effective digital advertising campaigns is challenging because:
+* Running effective digital advertising campaigns is challenging because:
 
-Marketers often have hundreds of ads across multiple platforms, making manual analysis time-consuming.
+* Marketers often have hundreds of ads across multiple platforms, making manual analysis time-consuming.
 
-Budgets are limited, and inefficient allocation can drastically reduce ROI.
+* Budgets are limited, and inefficient allocation can drastically reduce ROI.
 
-Identifying high-performing ads and understanding what influences performance is difficult without proper analytics.
+* Identifying high-performing ads and understanding what influences performance is difficult without proper analytics.
 
-Ad copy and messaging often lack data-driven improvements, which can hurt engagement.
+* Ad copy and messaging often lack data-driven improvements, which can hurt engagement.
 
-This project solves these problems by:
+## **This project solves these problems by-**
 
-Automatically predicting CTR and conversions for all ads in a dataset.
+* Automatically predicting CTR and conversions for all ads in a dataset.
 
-Providing RL-based budget optimization to maximize returns from limited resources.
+* Providing RL-based budget optimization to maximize returns from limited resources.
 
-Offering explainable insights (XAI) on what metrics drive ad performance.
+* Offering explainable insights (XAI) on what metrics drive ad performance.
 
-Suggesting improvements for ad copy based on sentiment analysis.
+* Suggesting improvements for ad copy based on sentiment analysis.
 
-Allowing interactive visualization and scenario simulations for better decision-making.
+* Allowing interactive visualization and scenario simulations for better decision-making.
 
 In short: It helps marketers save time, improve ROI, and make data-driven decisions with ease.
 
 ---
+
