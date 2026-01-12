@@ -1,0 +1,63 @@
+import gym
+import numpy as np
+from stable_baselines3 import PPO
+from stable_baselines3.common.vec_env import DummyVecEnv
+
+class AdBudgetEnv(gym.Env):
+    def __init__(self, df, metric='CTR'):
+        super().__init__()
+        self.df = df.copy()
+        self.n_ads = len(df)
+        self.metric = metric
+        self.action_space = gym.spaces.Box(low=0, high=1, shape=(self.n_ads,), dtype=np.float32)
+        self.observation_space = gym.spaces.Box(low=0, high=np.inf, shape=(self.n_ads * 3,), dtype=np.float32)
+        self.state = self._get_state()
+
+    def _get_state(self):
+        b = self.df['Budget'].values if 'Budget' in self.df.columns else np.ones(self.n_ads) * 100
+        c = self.df['Predicted_Conversions'].values if 'Predicted_Conversions' in self.df.columns else np.ones(self.n_ads)
+        ctr = self.df['Predicted_CTR'].values if 'Predicted_CTR' in self.df.columns else np.ones(self.n_ads) * 0.05
+        return np.concatenate([b, c, ctr])
+
+    def reset(self):
+        self.state = self._get_state()
+        return self.state
+
+    def step(self, action):
+        action = np.array(action)
+        action = action / (action.sum() + 1e-6)
+        total_budget = self.df['Budget'].sum() if 'Budget' in self.df.columns else self.n_ads * 100
+        allocated = action * total_budget
+        conv = self.df['Predicted_Conversions'].values
+        ctr = self.df['Predicted_CTR'].values
+        
+        if self.metric == "CTR":
+            reward = np.sum((allocated / total_budget) * ctr)
+        elif self.metric == "Conversions":
+            reward = np.sum((allocated / total_budget) * conv)
+        else:
+            reward = -np.sum(allocated)
+        done = True
+        info = {}
+        self.state = np.concatenate([allocated, conv, ctr])
+        return self.state, reward, done, info
+
+def run_rl_optimization(df, metric="CTR"):
+    env = DummyVecEnv([lambda: AdBudgetEnv(df, metric)])
+    model = PPO("MlpPolicy", env, verbose=0)
+    model.learn(total_timesteps=200)
+    
+    obs = env.reset()
+    action, _ = model.predict(obs)
+    action = action / (action.sum() + 1e-6)
+    total_budget = df['Budget'].sum()
+    df['Optimized_Budget'] = (action.flatten() * total_budget).round(2)
+    
+    #  Budget Efficiency Calculation
+    baseline_alloc = np.ones(len(df)) / len(df)
+    baseline_score = np.sum(baseline_alloc * df['Predicted_CTR'])
+    optimized_alloc = df['Optimized_Budget'] / df['Optimized_Budget'].sum()
+    optimized_score = np.sum(optimized_alloc * df['Predicted_CTR'])
+    budget_efficiency = ((optimized_score - baseline_score) / baseline_score) * 100
+    
+    return df, budget_efficiency
