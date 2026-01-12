@@ -1,0 +1,65 @@
+# HuggingFace Transformers pre-trained model for sentiment analysis
+
+import pandas as pd
+from transformers import pipeline
+
+# Loading sentiment analyzer once (pretrained model)
+# Using DistilBERT fine-tuned on SST-2 for sentiment analysis
+sentiment_analyzer = pipeline(
+    "sentiment-analysis",
+    model="distilbert-base-uncased-finetuned-sst-2-english"
+)
+
+def analyze_ad_text_real(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Analyze ad text using a real pre-trained NLP model.
+    Adds sentiment, confidence score, and ad copy suggestions.
+    
+    Parameters:
+        df: pd.DataFrame with at least 'Ad_Description' column
+    Returns:
+        df: pd.DataFrame with new columns:
+            - Ad_Sentiment (POSITIVE/NEGATIVE)
+            - Sentiment_Score (float)
+            - Ad_Copy_Suggestion (str)
+    """
+    df = df.copy()
+    
+    if 'Ad_Description' not in df.columns:
+        raise ValueError("DataFrame must contain 'Ad_Description' column for NLP analysis.")
+    
+    # Fill NaN text
+    texts = df['Ad_Description'].fillna("").tolist()
+    
+    # Running sentiment analysis (batching for performance)
+    results = sentiment_analyzer(texts, batch_size=16)
+    
+    # Extracting labels and confidence scores
+    df['Ad_Sentiment'] = [res['label'] for res in results]
+    df['Sentiment_Score'] = [res['score'] for res in results]
+    
+    # Suggesting ad copy improvements
+    suggestions = []
+    for sentiment, text in zip(df['Ad_Sentiment'], df['Ad_Description']):
+        if sentiment == "NEGATIVE":
+            suggestions.append(
+                "Consider rewording headline and CTA for positivity"
+            )
+        else:
+            suggestions.append("Ad copy is positive or neutral")
+    df['Ad_Copy_Suggestion'] = suggestions
+    
+    return df
+
+# Example 
+if __name__ == "__main__":
+    sample_df = pd.DataFrame({
+        "Ad_Description": [
+            "Buy now and get 50% off!",
+            "Worst offer ever, do not click",
+            "Limited time deal, best price guaranteed!"
+        ]
+    })
+    
+    analyzed_df = analyze_ad_text_real(sample_df)
+    print(analyzed_df)
