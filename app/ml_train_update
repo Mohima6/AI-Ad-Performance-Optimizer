@@ -1,0 +1,35 @@
+import pandas as pd
+import numpy as np
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.model_selection import train_test_split
+import joblib
+
+def train_ml_models(df: pd.DataFrame):
+    df = df.copy()
+    
+    # CTR Prediction 
+    X_ctr = df[['Budget','Impressions','Clicks']].fillna(0)
+    y_ctr = df['CTR'].fillna(0)
+    X_train, X_test, y_train, y_test = train_test_split(X_ctr, y_ctr, test_size=0.2, random_state=42)
+    ctr_model = RandomForestRegressor(n_estimators=200, random_state=42)
+    ctr_model.fit(X_train, y_train)
+    df['Predicted_CTR'] = ctr_model.predict(X_ctr)
+    
+    #  Conversions Prediction
+    X_conv = df[['Budget','Clicks','CTR']].fillna(0)
+    y_conv = df['Conversions'].fillna(0)
+    conv_model = RandomForestRegressor(n_estimators=200, random_state=42)
+    conv_model.fit(X_conv, y_conv)
+    df['Predicted_Conversions'] = conv_model.predict(X_conv)
+    
+    # Save models for reproducibility
+    joblib.dump(ctr_model, "models/ctr_model.pkl")
+    joblib.dump(conv_model, "models/conv_model.pkl")
+    
+    # Manual Effort Reduction Calculation 
+    manual_time_per_ad = 10  # minutes per ad
+    num_ads = len(df)
+    manual_time = manual_time_per_ad * num_ads
+    automated_time = 1  # estimated automated time
+    effort_reduction = ((manual_time - automated_time) / manual_time) * 100
+    return df, effort_reduction
